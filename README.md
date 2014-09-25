@@ -13,5 +13,7 @@ Authors
 For further details, please contact contributors by e-mail.
 
 Address 1 : mysticPrg@gmail.com
+
 Address 2 : hyesoo1104@gmail.com
+
 Address 3 : hansg.se.ssm@gmail.com
