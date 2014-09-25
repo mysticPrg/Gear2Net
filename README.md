@@ -7,12 +7,11 @@ It can provide the control function of the mobile and for the communication func
 
 The committer can easily present to the additional API because the Gear2Net was distinguished between Framework and API. And technical support documents about addition to API are due to be provided shortly.
 
+Authors
 ===
 
 For further details, please contact contributors by e-mail.
 
 Address 1 : mysticPrg@gmail.com
-
 Address 2 : hyesoo1104@gmail.com
-
 Address 3 : hansg.se.ssm@gmail.com
