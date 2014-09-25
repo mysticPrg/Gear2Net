@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/net/gear2net/api/util/webviewer/G2NWebViewer.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/net/gear2net/api/util/keyboard/G2NKeyboard.java" />
+    </issue>
+</lint>

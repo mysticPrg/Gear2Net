@@ -1,0 +1,64 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#000000;
+}
+
+.customHeader{
+	position: relative;
+	width: 100%;
+	height: 3.466666666666667rem;
+	line-height: 3.466666666666667rem;
+	background-color: #fa578e;
+}
+
+#loading_ani{
+	margin: 139px;
+	margin-top: 135px;
+}
+
+#page_loading{
+	background: url(/res/pink_loading.png);
+}
+
+
+.ui-page {
+/*	overflow: auto !important;*/
+}
+
+.ui-listview > li {
+	overflow-x: auto !important;
+	text-overflow: initial !important;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+}
+
+
+.content_text {
+	font-weight:bold;
+	font-size:5em;
+	color:#fff;
+}
+
+.ui-title {
+  color: #ffffff;
+  font-size: 25px;
+  white-space: nowrap;
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 16px;
+}
+
+.ui-footer {
+	overflow: auto !important;
+	text-overflow: initial !important;	
+}

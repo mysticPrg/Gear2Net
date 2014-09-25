@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../description.xsl"?>
+<Overview version="1.0">
+  <SampleName>Gear 2 Net</SampleName>
+  <SampleVersion>1.0</SampleVersion>
+  <Preview>screenshot.png</Preview>
+  <Description>
+    Gear 2 Net Framework Template.
+  </Description>
+</Overview>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="Gear 2 Net Framework Template"/>
+		
+		<title>OkieTalkie</title>
+		
+		<link rel="stylesheet"  href="libs/Gear2Net/libs/tau/themes/black/tau.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	
+	<body>
+	
+		<!-- Not Connected(to Bridge App) Page ===================================================== -->
+		<div id="page_disconnect" class="ui-page ui-page-active">
+			Not connected
+		</div>
+	
+		<!-- Main Page ===================================================== -->
+		<div id="page_main" class="ui-page">
+			<!-- 
+			<button id="btn_init" class="ui-btn">Init</button>
+			<button id="btn_start" class="ui-btn">RecordStart</button>
+			<button id="btn_stop" class="ui-btn">RecordStop</button>
+			<button id="btn_play" class="ui-btn">Play</button>
+			 -->
+			 
+			 <div id="main_header" class="header_div">
+			 	<div id="main_cnt_total" class="header_item">
+			 		<img src="imgs/cnt_total.png">
+			 		<p>0 명</p>
+			 	</div>
+			 	<div id="main_cnt_room" class="header_item">
+			 		<img src="imgs/cnt_room.png">
+			 		<p>0 명</p>
+			 	</div>
+			 </div>
+			 
+			 <div id="main_hz">
+			 	<div id="main_hz_first" class="main_hz_div">
+			 		<button id="main_hz_up_first" class="main_hz_btn main_hz_btn_up"><img src="imgs/up.png"></button>
+			 		<p>9</p>
+			 		<button id="main_hz_down_first" class="main_hz_btn main_hz_btn_down"><img src="imgs/down.png"></button>
+			 	</div>
+			 	
+			 	<div id="main_hz_second" class="main_hz_div">
+			 		<button id="main_hz_up_second" class="main_hz_btn main_hz_btn_up"><img src="imgs/up.png"></button>
+			 		<p>3</p>
+			 		<button id="main_hz_down_second" class="main_hz_btn main_hz_btn_down"><img src="imgs/down.png"></button>
+			 	</div>
+			 	
+			 	<div id="main_hz_dot"><p>.</p></div>
+			 	
+			 	<div id="main_hz_third" class="main_hz_div">
+			 		<button id="main_hz_up_third" class="main_hz_btn main_hz_btn_up"><img src="imgs/up.png"></button>
+			 		<p>7</p>
+			 		<button id="main_hz_down_third" class="main_hz_btn main_hz_btn_down"><img src="imgs/down.png"></button>
+			 	</div>
+			 	
+			 	<div id="main_hz_MHz"><p>MHz</p></div>
+			 </div>
+			 
+			 <div id="main_btn">
+			 	<button id="main_btn_connect">
+			 		Connect!
+				</button>
+			 </div>
+		</div>
+
+		<!-- Room Page ===================================================== -->
+		<div id="page_room" class="ui-page">
+			<div id="room_header" class="header_div">
+			 	<div id="room_hz" class="header_item">
+			 		<img src="imgs/hertz.png">
+			 		<p>93.7<span>MHz</span></p>
+			 	</div>
+			 	<div id="room_cnt" class="header_item">
+			 		<img src="imgs/cnt_room.png">
+			 		<p>0 명</p>
+			 	</div>
+			 </div>
+			 
+			 <div id="room_mic">
+			 	<button id="room_mic_btn">
+			 		<img src="imgs/mic.png">
+			 	</button>
+			 </div>
+		</div>
+	<script data-main="app" src="libs/Gear2Net/libs/require.js"></script>
+	
+</html>

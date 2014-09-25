@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="Gear 2 Net Sample Widget : Media Contoller"/>
+		
+		<title>Media Controller</title>
+		
+		<link rel="stylesheet"  href="libs/Gear2Net/libs/tau/themes/black/tau.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	
+	<body>
+	
+		<!-- Not Connected(to Bridge App) Page ===================================================== -->
+		<div id="page_disconnect" class="ui-page ui-page-active">
+			<img src="res/NotConnected.png">
+		</div>
+		
+		<!-- Connect to Socket server page ================================== -->
+		<div id="page_connect_to_server" class="ui-page">
+			<button id="btn_connect">
+			</button>
+		</div>		
+	
+		<!-- Main Page ===================================================== -->
+		<div id="page_main" class="ui-page">
+			<input id ="btn_play" type="button" >
+			<input id ="btn_capture" type="button" >
+			<input id ="btn_mute" type="button" >
+			<input id ="btn_volDown" type="button" >
+			<input id ="btn_volUp" type="button" >
+			<input id ="btn_backward" type="button" >
+			<input id ="btn_forward" type="button" >
+			<input id ="btn_syncDown" type="button" >
+			<input id ="btn_normalSync" type="button" >
+			<input id ="btn_syncUp" type="button" >
+		</div>
+
+	<script data-main="app" src="libs/Gear2Net/libs/require.js"></script>
+	
+</html>

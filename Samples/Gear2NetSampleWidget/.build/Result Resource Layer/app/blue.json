@@ -1,0 +1,10 @@
+{
+    "name": "Gear 2 Net",
+    "url": "www.gear2net.org",
+    "version": "0.1.1",
+    "options": {
+        "paths": "E:/Setting Program/eclipse/WORKSPACE/Gear2NetSampleWidget/libs/Gear2Net/modules/api",
+        "outdir": "./build_blue",
+        "themedir": "./node_modules/yuidoc-theme-blue"
+    }
+}

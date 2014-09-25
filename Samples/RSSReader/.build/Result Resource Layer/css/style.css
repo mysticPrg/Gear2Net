@@ -1,0 +1,205 @@
+
+*{
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+}
+/*    
+ * ------HEADER--------
+ */
+.rss_header{
+	height: 3.466666666666667rem;
+	line-height: 3.466666666666667rem;
+	background-color: #6DD5A6;
+	padding-left:10px;
+	font-size: 20pt;
+}
+
+#rss_main_header{
+	position: relative;
+	float:left;
+	width: 268px;
+}
+
+#feed_header{
+	position: relative;
+	width: 320px;
+}
+
+#feed_header > marquee{
+	float:left;
+	width : 258px;
+}
+
+#full_header{
+	position: relative;
+	width: 320px;
+}
+
+#page_loading{
+	background: url(/resource/loading_page.png);
+}
+#loading_ani{
+	margin: 139px;
+	margin-top: 135px;
+}
+
+/*    
+ * ------DETAIL FEED BUTTON--------
+ */
+.detail_feed_content{
+	font-size:15pt
+	clear:both;
+	width:320px;
+	height: 268px;
+}
+/*    
+ * ------UI BUTTON--------
+ */
+#btn_plus{
+	position: relative;
+	width:52px;
+	height:52px;
+	border : none;
+	background: url(/resource/btn_plus.png);
+}
+#btn_setting{
+	position: relative;
+	width:52px;
+	height:52px;
+	border : none;
+	background: url(/resource/btn_setting.png);
+}
+#btn_back{
+	position: relative;
+	width:52px;
+	height:52px;
+	border : none;
+	background: url(/resource/btn_back.png);
+}
+#btn_phone{
+	position: relative;
+	width:52px;
+	height:52px;
+	border : none;
+	float:left;
+	background: url(/resource/phone.png);
+}
+
+/*    
+ * ------ADD PAGE--------
+ */
+.addPage_font{
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:5px;
+	color: #f0f0f0;
+	font-size: 20pt;
+}
+
+.addPage_input{
+	text-align : left;
+	padding:5px;
+	font-size: 20pt;
+	margin-left:10px;
+	margin-right:15px;
+	width: 290px;
+	height : 52px;
+	border : none;
+	background-color: #f0f0f0;
+	color: #202020;
+	overflow: auto;
+}
+
+.addPage_btn{
+	height : 52px;
+	width : 140px;
+	border : none;
+	background-color: #56CE98;
+	color: #FFFFFF;
+	overflow: auto;
+	font-size: 20pt;
+	position: relative;
+	float:left;
+}
+
+#addPage_btn_cancel{
+	margin-top:15px;
+	position:relative;
+	float:left;
+	margin-left:10px;
+	margin-right:5px;
+	width: 145px;
+	height:52px;
+	border : none;
+	background: url(/resource/cancel.png);
+	
+}
+
+#addPage_btn_save{
+	margin-top:15px;
+	position:relative;
+	margin-left:5px;
+	margin-right:10px;
+	width: 145px;
+	height:52px;
+	border : none;
+	background: url(/resource/save.png);
+}
+
+
+
+
+
+
+/**
+/* tau
+*/
+.ui-page {
+/*	overflow: auto !important;*/
+}
+
+.ui-listview > li {
+	font-size: 18pt;
+	overflow-x: auto !important;
+	text-overflow: initial !important;
+}
+
+.uiContents{
+	width: 320px;
+	height: 268px;
+	overflow: auto;
+	font-size: 17pt;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+	font-size:17pt;
+}
+
+
+.content_text {
+	font-weight:bold;
+	font-size:17pt;
+	color:#fff;
+}
+
+.ui-title {
+  color: #ff9000;
+  font-size: 24px;
+  white-space: nowrap;
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ui-footer {
+	overflow: auto !important;
+	text-overflow: initial !important;	
+}

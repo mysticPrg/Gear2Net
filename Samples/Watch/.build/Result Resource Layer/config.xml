@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="org.gear2net.sample.watch" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="fy4llKrmKs.Watch" package="fy4llKrmKs" required_version="1.0"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png" height="256" width="256"/>
+    <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
+    <name>Watch</name>
+    <tizen:privilege name="http://developer.samsung.com/privilege/accessoryprotocol"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+    <tizen:category name="com.samsung.wmanager.WATCH_CLOCK"/>
+</widget>
