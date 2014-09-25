@@ -1,4 +1,4 @@
-G2N
+What's Gear2Net (G2N)
 ===
 
 The Gear2Net is Open Source Framework. 
