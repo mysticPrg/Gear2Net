@@ -7,6 +7,14 @@ It can provide the control function of the mobile and for the communication func
 
 The committer can easily present to the additional API because the Gear2Net was distinguished between Framework and API. And technical support documents about addition to API are due to be provided shortly.
 
+
+Features
+===
+* Web Skill Only. (Don't care Android & SAP)
+* Android Device Conrol (Audio, Battery, Vibrate, Wifi, Sensor)
+* Network Connection (TCP/UDP Socket, HTTP)
+* Utility (Keyboard, Log, Open ULR in Android)
+
 Links
 ===
 
