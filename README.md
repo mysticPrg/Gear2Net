@@ -13,7 +13,7 @@ Features
 * Web Skill Only. (Don't care Android & SAP)
 * Android Device Conrol (Audio, Battery, Vibrate, Wifi, Sensor)
 * Network Connection (TCP/UDP Socket, HTTP)
-* Utility (Keyboard, Log, Open ULR in Android)
+* Utility (Keyboard, Log, Open URL in Android)
 
 Links
 ===
