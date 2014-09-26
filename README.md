@@ -11,7 +11,7 @@ The committer can easily present to the additional API because the Gear2Net was 
 Features
 ===
 * Web Skill Only. (Don't care Android & SAP)
-* Android Device Conrol (Audio, Battery, Vibrate, Wifi, Sensor)
+* Android Device Control (Audio, Battery, Vibrate, Wifi, Sensor)
 * Network Connection (TCP/UDP Socket, HTTP)
 * Utility (Keyboard, Log, Open URL in Android)
 
