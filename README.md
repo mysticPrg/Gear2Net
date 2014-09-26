@@ -14,7 +14,7 @@ Youtube Video:
 
 Github : https://github.com/mysticPrg/Gear2Net
 
-API Reference: 
+API Reference: https://github.com/mysticPrg/Gear2Net/releases/download/v0.1.2/G2NReference.zip
 
 Authors
 ===
