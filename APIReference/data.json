@@ -1,0 +1,2477 @@
+{
+    "project": {
+        "name": "Gear 2 Net",
+        "description": "Gear 2 Net Framework API Reference Page",
+        "url": "https://github.com/mysticPrg/G2N",
+        "version": "0.1.1"
+    },
+    "files": {
+        "api\\G2NMobile.js": {
+            "name": "api\\G2NMobile.js",
+            "modules": {
+                "G2NMobile": 1
+            },
+            "classes": {
+                "G2NMobile.Battery": 1,
+                "G2NMobile.Audio": 1,
+                "G2NMobile.Audio.AudioMode": 1,
+                "G2NMobile.Audio.VolumeType": 1,
+                "G2NMobile.Audio.AdjustVolumeOption": 1,
+                "G2NMobile.Sensor": 1,
+                "G2NMobile.Sensor.SensorType": 1,
+                "G2NMobile.Sensor.Delay": 1,
+                "G2NMobile.Sensor.SensorManager": 1,
+                "G2NMobile.Vibrate": 1,
+                "G2NMobile.Wifi": 1,
+                "G2NMobile.Wifi.WifiState": 1,
+                "G2NMobile.Wifi.WifiInfo": 1,
+                "G2NMobile.Wifi.WifiList": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NMobile": 1
+            }
+        },
+        "api\\G2NNetwork.js": {
+            "name": "api\\G2NNetwork.js",
+            "modules": {
+                "G2NNetwork": 1
+            },
+            "classes": {
+                "G2NNetwork.Http": 1,
+                "G2NNetwork.Http.RequestMethod": 1,
+                "G2NNetwork.Http.HttpRequestQueue": 1,
+                "G2NNetwork.Http.HttpRequest": 1,
+                "G2NNetwork.Socket": 1,
+                "G2NNetwork.Socket.Protocol": 1,
+                "G2NNetwork.Socket.Address": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NNetwork": 1
+            }
+        },
+        "api\\G2NUtil.js": {
+            "name": "api\\G2NUtil.js",
+            "modules": {
+                "G2NUtil": 1
+            },
+            "classes": {
+                "G2NUtil.Keyboard": 1,
+                "G2NUtil.Log": 1,
+                "G2NUtil.WebViewer": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NUtil": 1
+            }
+        }
+    },
+    "modules": {
+        "G2NMobile": {
+            "name": "G2NMobile",
+            "submodules": {},
+            "classes": {
+                "G2NMobile.Battery": 1,
+                "G2NMobile.Audio": 1,
+                "G2NMobile.Audio.AudioMode": 1,
+                "G2NMobile.Audio.VolumeType": 1,
+                "G2NMobile.Audio.AdjustVolumeOption": 1,
+                "G2NMobile.Sensor": 1,
+                "G2NMobile.Sensor.SensorType": 1,
+                "G2NMobile.Sensor.Delay": 1,
+                "G2NMobile.Sensor.SensorManager": 1,
+                "G2NMobile.Vibrate": 1,
+                "G2NMobile.Wifi": 1,
+                "G2NMobile.Wifi.WifiState": 1,
+                "G2NMobile.Wifi.WifiInfo": 1,
+                "G2NMobile.Wifi.WifiList": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NMobile": 1
+            },
+            "tag": "module",
+            "file": "api\\G2NMobile.js",
+            "line": 1846,
+            "description": "G2NMobile module have control of the Android-Phone conditions. \nBasically, Providing for this module is the Audio, Battery, Wifi, Vibrate."
+        },
+        "G2NNetwork": {
+            "name": "G2NNetwork",
+            "submodules": {},
+            "classes": {
+                "G2NNetwork.Http": 1,
+                "G2NNetwork.Http.RequestMethod": 1,
+                "G2NNetwork.Http.HttpRequestQueue": 1,
+                "G2NNetwork.Http.HttpRequest": 1,
+                "G2NNetwork.Socket": 1,
+                "G2NNetwork.Socket.Protocol": 1,
+                "G2NNetwork.Socket.Address": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NNetwork": 1
+            },
+            "tag": "module",
+            "file": "api\\G2NNetwork.js",
+            "line": 905,
+            "description": "Gear2 use Bluetooth to communicate with Android for communication with external server.\n Using this module makes a Gear2 look like that it communicate with external server directly.\n Protocol provides with HTTP, TCP, UDP."
+        },
+        "G2NUtil": {
+            "name": "G2NUtil",
+            "submodules": {},
+            "classes": {
+                "G2NUtil.Keyboard": 1,
+                "G2NUtil.Log": 1,
+                "G2NUtil.WebViewer": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "G2NUtil": 1
+            },
+            "tag": "module",
+            "file": "api\\G2NUtil.js",
+            "line": 186,
+            "description": "Util module was made to improvement about inconvenient as you develop Gear2."
+        }
+    },
+    "classes": {
+        "G2NMobile.Battery": {
+            "name": "G2NMobile.Battery",
+            "shortname": "G2NMobile.Battery",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 41,
+            "description": "This class controls the battery condition of Android-Phone.\nFor now, it is able controls to just charge in Android-Phone battery.\nIt is singleton. Whatever you make several object, perceived as one object."
+        },
+        "G2NMobile.Audio": {
+            "name": "G2NMobile.Audio",
+            "shortname": "G2NMobile.Audio",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 116,
+            "description": "This class controls for audio of Android-Phone.\nIt is singleton. Whatever you make several object, perceived as one object."
+        },
+        "G2NMobile.Audio.AudioMode": {
+            "name": "G2NMobile.Audio.AudioMode",
+            "shortname": "G2NMobile.Audio.AudioMode",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 436,
+            "description": "As AudioMode class is a kind of type, it indicate a value for state of audio mode in Android-Phone.\nIt is subordinate to the Audio Class. \nAnd used in Audio class of G2NMobile module."
+        },
+        "G2NMobile.Audio.VolumeType": {
+            "name": "G2NMobile.Audio.VolumeType",
+            "shortname": "G2NMobile.Audio.VolumeType",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 496,
+            "description": "As VolumeType class is a kind of type, it indicate a value for kind of audio stream in Android-Phone.\nIt is subordinate to the Audio Class. \nAnd used in Audio class of G2NMobile module."
+        },
+        "G2NMobile.Audio.AdjustVolumeOption": {
+            "name": "G2NMobile.Audio.AdjustVolumeOption",
+            "shortname": "G2NMobile.Audio.AdjustVolumeOption",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 644,
+            "description": "As VolumeType class is a kind of type, to show reacted when you was control volume for many kinds of audio stream in Android-Phone. \nIt is subordinate to the Audio Class. \nAnd used in Audio class of G2NMobile module."
+        },
+        "G2NMobile.Sensor": {
+            "name": "G2NMobile.Sensor",
+            "shortname": "G2NMobile.Sensor",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 687,
+            "description": "This Class controls one of Sensors that returned object through the \n{{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}\nIt is supported the sensor to the list of\n{{#crossLink \"G2NMobile.Sensor.SensorType\"}}{{/crossLink}}.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/GYROSCOPE:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/LIGHT:attribute\"}}{{/crossLink}}"
+        },
+        "G2NMobile.Sensor.SensorType": {
+            "name": "G2NMobile.Sensor.SensorType",
+            "shortname": "G2NMobile.Sensor.SensorType",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 926,
+            "description": "As SensorType class is a kind of type, this class indicate type of loaded sensor within Android-Phone.\nIt is subordinate to the Sensor Class. \nAnd used in SensorManager class of G2NMobile module."
+        },
+        "G2NMobile.Sensor.Delay": {
+            "name": "G2NMobile.Sensor.Delay",
+            "shortname": "G2NMobile.Sensor.Delay",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 992,
+            "description": "This class is a kind of Delay type which indicate the changed sensor value.   \nIt is subordinate to the Sensor Class. \nAnd used in Sensor class of G2NMobile module."
+        },
+        "G2NMobile.Sensor.SensorManager": {
+            "name": "G2NMobile.Sensor.SensorManager",
+            "shortname": "G2NMobile.Sensor.SensorManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1036,
+            "description": "This Class provides several loaded sensor in Android-Phone.\nFor now, it is provides to just the accelerometer, gyroscope, light sensor.\nIt is singleton. Whatever you make several object, perceived as one object."
+        },
+        "G2NMobile.Vibrate": {
+            "name": "G2NMobile.Vibrate",
+            "shortname": "G2NMobile.Vibrate",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1270,
+            "description": "This is the 'Vibrate class' description for the G2NMobile module.\nThe Vibrate class controls vibrator on board the Android-Phone. \nBut if vibrator does not exist, it is not work with Gear2.\nAlso, Vibrating the Android-Phone doesn't change that its audio mode.\nIt is singleton. Whatever you make several object, perceived as one object."
+        },
+        "G2NMobile.Wifi": {
+            "name": "G2NMobile.Wifi",
+            "shortname": "G2NMobile.Wifi",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1377,
+            "description": "Wifi Class controls Wi-Fi module in Android device.\nThis class will detects wireless signal and will makes Wi-Fi list of AP that may be accessed by Wi-Fi.\nRefer to the {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}} class.\nIt is singleton. Whatever you make several object, perceived as one object.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}}"
+        },
+        "G2NMobile.Wifi.WifiState": {
+            "name": "G2NMobile.Wifi.WifiState",
+            "shortname": "G2NMobile.Wifi.WifiState",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1635,
+            "description": "It indicate a state of Wi-Fi.\nWhen you register the {{#crossLink \"G2NMobile.Wifi/addWifiStateChangedListener:method\"}}{{/crossLink}} \nmethod of {{#crossLink \"G2NMobile.Wifi\"}}{{/crossLink}}, you will obtain a state of Wi-Fi. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi/addWifiStateChangedListener:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi/removeWifiStateChangedListener:method\"}}{{/crossLink}}"
+        },
+        "G2NMobile.Wifi.WifiInfo": {
+            "name": "G2NMobile.Wifi.WifiInfo",
+            "shortname": "G2NMobile.Wifi.WifiInfo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1762,
+            "description": "This class provide a connectable AP of Wi-Fi.\nThrough {{#crossLink \"G2NMobile.Wifi.WifiList/getInfo:method\"}}{{/crossLink}} method {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}}\nyou will can create received this.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList/getInfo:method\"}}{{/crossLink}}"
+        },
+        "G2NMobile.Wifi.WifiList": {
+            "name": "G2NMobile.Wifi.WifiList",
+            "shortname": "G2NMobile.Wifi.WifiList",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NMobile",
+            "namespace": "G2NMobile",
+            "file": "api\\G2NMobile.js",
+            "line": 1846,
+            "description": "WifiList class made of the {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}} method of\n{{#crossLink \"G2NMobile.Wifi\"}}{{/crossLink}} class.\nIt has connectable Wi-Fi list about AP. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Http": {
+            "name": "G2NNetwork.Http",
+            "shortname": "G2NNetwork.Http",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 19,
+            "description": "This is HTTP Class within G2NNetwork module.\nIt is created for just Http namespace."
+        },
+        "G2NNetwork.Http.RequestMethod": {
+            "name": "G2NNetwork.Http.RequestMethod",
+            "shortname": "G2NNetwork.Http.RequestMethod",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 31,
+            "description": "It defines the request methods.\nProviding that    \n{{#crossLink \"G2NNetwork.Http.RequestMethod/POST:attribute\"}}{{/crossLink}},\n{{#crossLink \"G2NNetwork.Http.RequestMethod/GET:attribute\"}}{{/crossLink}},\n{{#crossLink \"G2NNetwork.Http.RequestMethod/PUT:attribute\"}}{{/crossLink}},\n{{#crossLink \"G2NNetwork.Http.RequestMethod/DELETE:attribute\"}}{{/crossLink}}\n\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequest\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Http.HttpRequestQueue": {
+            "name": "G2NNetwork.Http.HttpRequestQueue",
+            "shortname": "G2NNetwork.Http.HttpRequestQueue",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 115,
+            "description": "It is collect requests in queue, and then send the request and receive the response to web servers.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequest\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Http.HttpRequest": {
+            "name": "G2NNetwork.Http.HttpRequest",
+            "shortname": "G2NNetwork.Http.HttpRequest",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 291,
+            "description": "Create the request to send web servers.\nIt will be send request after in request queue.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/addRequest:method\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Socket": {
+            "name": "G2NNetwork.Socket",
+            "shortname": "G2NNetwork.Socket",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 347,
+            "description": "This class indicates socket communication.\nIt support to TCP and UDP protocol, refer to {{#crossLink \"G2NNetwork.Socket.Protocol\"}}{{/crossLink}}.\nbecause we don't know when response message about the socket connection and closer will come, \nthese must register event listener.    \n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Socket.Protocol\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Socket.Protocol": {
+            "name": "G2NNetwork.Socket.Protocol",
+            "shortname": "G2NNetwork.Socket.Protocol",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 860,
+            "description": "Socket communication protocols have TCP and UDP.\nSo, It indicate the protocol type.\nWhen create the socket, you decide protocol what you want in second parameter. \n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}"
+        },
+        "G2NNetwork.Socket.Address": {
+            "name": "G2NNetwork.Socket.Address",
+            "shortname": "G2NNetwork.Socket.Address",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork",
+            "file": "api\\G2NNetwork.js",
+            "line": 905,
+            "description": "This class controls the IP address and the Port number that will use the socket communication.\nFor connecting used in first parameter for this class when you will create the socket.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}"
+        },
+        "G2NUtil.Keyboard": {
+            "name": "G2NUtil.Keyboard",
+            "shortname": "G2NUtil.Keyboard",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NUtil",
+            "namespace": "G2NUtil",
+            "file": "api\\G2NUtil.js",
+            "line": 31,
+            "description": "Input the keyboard from Android device because it does not provide a keyboard in Gear2."
+        },
+        "G2NUtil.Log": {
+            "name": "G2NUtil.Log",
+            "shortname": "G2NUtil.Log",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NUtil",
+            "namespace": "G2NUtil",
+            "file": "api\\G2NUtil.js",
+            "line": 87,
+            "description": "During developing widget of Gear2, you leave the Log in the Android development environment when you want it.\nAnd, it is singleton. Whatever you make several object, perceived as one object."
+        },
+        "G2NUtil.WebViewer": {
+            "name": "G2NUtil.WebViewer",
+            "shortname": "G2NUtil.WebViewer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "G2NUtil",
+            "namespace": "G2NUtil",
+            "file": "api\\G2NUtil.js",
+            "line": 186,
+            "description": "If the Gear2 transmits URL to Android device, show web page in the receiver window.\nIt is singleton. Whatever you make several object, perceived as one object."
+        }
+    },
+    "classitems": [
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 52,
+            "description": "To detect changed event by charge of battery, add the listener.\nThe cause of an detected event is not always change by charge of battery.\nSometimes, It is able cause to detection by more shorter cycle.\nCharge of battery has a percent(%) unit a positive integer value.   \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Battery/removeBatteryChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addBatteryChangedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tvar batteryListenerKey = null;\n\n\t\tfunction showBatteryResult(returnValue) {\n\t\t\t$('#result_mobile_battery').text('Result: ' + returnValue[0]);\n\t\t}\n\n\t\tfunction addListenerCallback(key) {\n\t\t\tbatteryListenerKey = key;\n\t\t}\n\n\t\tfunction removeListenerCallback() {\n\t\t\tbatteryListenerKey = null;\n\t\t}\n\n\t\t$('#btn_mobile_battery_addBatteryChangedListener').click(function() {\n\t\t\tG2NMobile.Battery.addBatteryChangedListener(showBatteryResult, addListenerCallback);\n\t\t});\n\n\t\t$('#btn_mobile_battery_removeBatteryChangedListener').click(function() {\n\t\t\tif ( batteryListenerKey !== null ) {\n\t\t\t\tG2NMobile.Battery.removeBatteryChangedListener(batteryListenerKey, removeListenerCallback);\n\t\t\t}\n\t\t}"
+            ],
+            "class": "G2NMobile.Battery",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 94,
+            "description": "Remove the event listener about change by charge of battery.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Battery/addBatteryChangedListener:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Battery/addBatteryChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeBatteryChangedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Battery",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 127,
+            "description": "Returns the current audio mode of Android-Phone.\nAudio mode means that sound, vibrate, silent mode of Android-Phone.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/setAudioMode:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getAudioMode",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Returned the {{#crossLink \"G2NMobile.Audio.AudioMode/NORMAL:attribute\"}}{{/crossLink}}(2)\nwhen the current audio mode of Android-Phone has sound mode.\nAnd returned the {{#crossLink \"G2NMobile.Audio.AudioMode/VIBRATE:attribute\"}}{{/crossLink}}(1) has vibrate mode.\nAlso, {{#crossLink \"G2NMobile.Audio.AudioMode/SILENT:attribute\"}}{{/crossLink}}(0) has silent mode.",
+                "type": "G2NMobile.Audio.AudioMode"
+            },
+            "example": [
+                "\n\t\tfunction showAudioResult(returnValue) {\n\t\t\t$('#result_mobile_audio').text('Result: ' + returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_audio_getAudioMode').click(function() {\n\t\t\tG2NMobile.Audio.getAudioMode(showAudioResult);\n\t\t});"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 158,
+            "description": "This method is sets the audio mode of Android-Phone. \nSilent mode will mute the volume and will not vibrate. \nVibrate mode will mute the volume and vibrate. \nNormal mode will be audible and may vibrate according to user settings.\n<br><br>\nCaution!<br>\nIf wrong with the inputed value in first parameter for audioMode, you receive the 'G2NAudioModeException' message. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/getAudioMode:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "setAudioMode",
+            "params": [
+                {
+                    "name": "audioMode",
+                    "description": "\nWhen you want to change current audio mode of Android-Phone to sound mode, input the\n{{#crossLink \"G2NMobile.Audio.AudioMode/NORMAL:attribute\"}}{{/crossLink}}(2).\nTo vibrate mode input the\n{{#crossLink \"G2NMobile.Audio.AudioMode/VIBRATE:attribute\"}}{{/crossLink}}(1).\nTo silent mode input the\n{{#crossLink \"G2NMobile.Audio.AudioMode/SILENT:attribute\"}}{{/crossLink}}(0).",
+                    "type": "G2NMobile.Audio.AudioMode"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Audio.setAudioMode(G2NMobile.Audio.AudioMode.SILENT);"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 190,
+            "description": "This method use when detect event about change of audio mode from Android-Phone.\nTo detect changed event by audio mode, add the listener.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/removeAudioModeChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addAudioModeChangedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tvar audioModeChangedListenerKey = null;\n\n\t\tfunction showAudioResult(returnValue) {\n\t\t\t$('#result_mobile_audio').text('Result: ' + returnValue[0]);\n\t\t}\n\n\t\tfunction addOnAudioModeChangedListenerCallback(key) {\n\t\t\taudioModeChangedListenerKey = key;\n\t\t}\n\n\t\tfunction removeAudioModeChangedListenerCallback() {\n\t\t\taudioModeChangedListenerKey = null;\n\t\t}\n\n\t\t$('#btn_mobile_audio_addAudioModeChangedListener').click(function() {\n\t\t\tG2NMobile.Audio.addAudioModeChangedListener(showAudioResult, addOnAudioModeChangedListenerCallback);\n\t\t});\n\n\t\t$('#btn_mobile_audio_removeAudioModeChangedListener').click(function() {\n\t\t\tif ( audioModeChangedListenerKey !== null ) {\n\t\t\t\tG2NMobile.Audio.removeAudioModeChangedListener(audioModeChangedListenerKey, removeAudioModeChangedListenerCallback);\n\t\t\t}\n\t\t});"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 230,
+            "description": "Remove the event listener about change by audio mode.  \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/addAudioModeChangedListener:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Audio/addAudioModeChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeAudioModeChangedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 247,
+            "description": "Returns the current volume index about the volume type.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for volumeType, you receive the 'G2NAudioVolumeTypeException' message.\n<br>If audio mode isn't sound mode, you are unobtainable the volume index. It that you receive the 'G2NAudioModeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/setVolumeValue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getVolumeValue",
+            "params": [
+                {
+                    "name": "volumeType",
+                    "description": "\n{{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}(0),\n{{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}}(2),\n{{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}}(3),\n{{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}(5),\n{{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}(8)",
+                    "type": "G2NMobile.Audio.VolumeType"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "example": [
+                "\n\t\tfunction showAudioResult(returnValue) {\n\t\t\t$('#result_mobile_audio').text('Result: ' + returnValue[0]);\n\t\t}\n\n\t\t$('#btn_mobile_audio_getVolumeValue').click(function() {\n\t\t\tG2NMobile.Audio.getVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, showAudioResult);\n\t\t});"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 284,
+            "description": "Set the volume index of the volume type.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for volumeType, you receive the 'G2NAudioVolumeTypeException' message.\n<br>If not inputed volume value from 0 to max volume value, you receive the 'G2NAudioVolumeValueException'. \n<br>If wrong with the inputed value in third parameter for adjustVolumeOption, you receive the 'G2NAudioAdjustVolumeOptionException'.\n<br>If audio mode isn't sound mode, you are unobtainable the volume index. It that you receive the 'G2NAudioModeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/getVolumeValue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "setVolumeValue",
+            "params": [
+                {
+                    "name": "volumeType",
+                    "description": "\n{{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}(0),\n{{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}}(2),\n{{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}}(3),\n{{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}(5),\n{{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}(8)",
+                    "type": "G2NMobile.Audio.VolumeType"
+                },
+                {
+                    "name": "volumeValue",
+                    "description": "\nThe volume value to set.\nSee {{#crossLink \"G2NMobile.Audio/getMaxVolumeValue:method\"}}{{/crossLink}} for the largest valid value.",
+                    "type": "Number"
+                },
+                {
+                    "name": "adjustVolumeOption",
+                    "description": "\nThe way Android-Phone window display the changed volume value.\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute\"}}{{/crossLink}}(4)",
+                    "type": "G2NMobile.Audio.AdjustVolumeOption"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Audio.setVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, 5, G2NMobile.Audio.AdjustVolumeOption.PLAY_SOUND);"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 326,
+            "description": "Returns the maximum volume index about the volume type.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for volumeType, you receive the 'G2NAudioVolumeTypeException' message.\n<br>If audio mode isn't sound mode, you are unobtainable the volume index. It that you receive the 'G2NAudioModeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/getVolumeValue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getMaxVolumeValue",
+            "params": [
+                {
+                    "name": "volumeType",
+                    "description": "\n{{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}(0),\n{{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}}(2),\n{{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}}(3),\n{{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}(5),\n{{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}(8)",
+                    "type": "G2NMobile.Audio.VolumeType"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "example": [
+                "\n\t\tG2NMobile.Audio.getMaxVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, showAudioResult);"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 357,
+            "description": "One step up to adjusts the volume of the volume type.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for volumeType, you receive the 'G2NAudioVolumeTypeException' message.\n<br>If wrong with the inputed value in second parameter for adjustVolumeOption, you receive the 'G2NAudioAdjustVolumeOptionException'.\n<br>If audio mode isn't sound mode, you are unobtainable the volume index. It that you receive the 'G2NAudioModeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/adjustVolumeDown:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "adjustVolumeUp",
+            "params": [
+                {
+                    "name": "volumeType",
+                    "description": "\n{{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}(0),\n{{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}}(2),\n{{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}}(3),\n{{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}(5),\n{{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}(8)",
+                    "type": "G2NMobile.Audio.VolumeType"
+                },
+                {
+                    "name": "adjustVolumeOption",
+                    "description": "\nThe way Android-Phone window display the adjusted volume value.\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute\"}}{{/crossLink}}(4)",
+                    "type": "G2NMobile.Audio.AdjustVolumeOption"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Audio.adjustVolumeUp(G2NMobile.Audio.VolumeType.SYSTEM, G2NMobile.Audio.AdjustVolumeOption.SHOW_UI);"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 394,
+            "description": "One step down to adjusts the volume of the volume type.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for volumeType, you receive the 'G2NAudioVolumeTypeException' message.\n<br>If wrong with the inputed value in second parameter for adjustVolumeOption, you receive the 'G2NAudioAdjustVolumeOptionException'.\n<br>If audio mode isn't sound mode, you are unobtainable the volume index. It that you receive the 'G2NAudioModeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio/adjustVolumeUp:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "adjustVolumeDown",
+            "params": [
+                {
+                    "name": "volumeType",
+                    "description": "\n{{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}(0),\n{{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}}(2),\n{{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}}(3),\n{{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}(5),\n{{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}(8)",
+                    "type": "G2NMobile.Audio.VolumeType"
+                },
+                {
+                    "name": "adjustVolumeOption",
+                    "description": "\nThe way Android-Phone window display the adjusted volume value.\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute\"}}{{/crossLink}}(4)",
+                    "type": "G2NMobile.Audio.AdjustVolumeOption"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Audio.adjustVolumeDown(G2NMobile.Audio.VolumeType.SYSTEM, G2NMobile.Audio.AdjustVolumeOption.SHOW_UI);"
+            ],
+            "class": "G2NMobile.Audio",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 447,
+            "description": "Audio mode that will be silent sound and will not vibrate.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.AudioMode/VIBRATE:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.AudioMode/NORMAL:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "SILENT",
+            "type": "Number",
+            "default": "0",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.AudioMode",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 462,
+            "description": "Audio mode that will vibrate and will be silent.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.AudioMode/SILENT:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.AudioMode/NORMAL:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "VIBRATE",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.AudioMode",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 477,
+            "description": "Audio mode that will be audible and will be vibrate. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.AudioMode/SILENT:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.AudioMode/VIBRATE:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "NORMAL",
+            "type": "Number",
+            "default": "2",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.AudioMode",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 507,
+            "description": "Audio stream for phone calls.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "VOICE_CALL",
+            "type": "Number",
+            "default": "0",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 526,
+            "description": "Audio stream for system sounds.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "SYSTEM",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 545,
+            "description": "Audio stream for the phone ring.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "RING",
+            "type": "Number",
+            "default": "2",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 564,
+            "description": "Audio stream for music playback.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "MUSIC",
+            "type": "Number",
+            "default": "3",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 583,
+            "description": "Audio stream for alarms.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "ALARM",
+            "type": "Number",
+            "default": "4",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 602,
+            "description": "Audio stream for notifications.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/DTMF:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "NOTIFICATION",
+            "type": "Number",
+            "default": "5",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 621,
+            "description": "Audio stream for DTMF Tones.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.VolumeType/VOICE_CALL:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Audio.VolumeType/SYSTEM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/RING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/MUSIC:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/ALARM:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Audio.VolumeType/NOTIFICATION:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "DTMF",
+            "type": "Number",
+            "default": "8",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.VolumeType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 655,
+            "description": "Show a toast volume value that you adjusted current selected audio stream in the Android-Phone window.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "SHOW_UI",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.AdjustVolumeOption",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 669,
+            "description": "Play sound volume value that you adjusted current selected audio stream in the Android-Phone.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "PLAY_SOUND",
+            "type": "Number",
+            "default": "4",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Audio.AdjustVolumeOption",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 714,
+            "description": "To detect changed event by sensor value, add the listener.\nDoing event registration in the beginning.\nAfter that it add the listener.\n<br><br>\nSee Also :\t{{#crossLink \"G2NMobile.Sensor/removeSensorChangedListener:method\"}}{{/crossLink}}, \n\t\t\t\t{{#crossLink \"G2NMobile.Sensor/startListen:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addSensorChangedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 734,
+            "description": "Remove the event listener about change by sensor value.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor/addSensorChangedListener:method\"}}{{/crossLink}} \n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeSensorChangedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 751,
+            "description": "This method is start the listener that detects the sensor value.\n<br><br>\nCaution!\n<br> If you are not call the {{#crossLink \"G2NMobile.Sensor/addSensorChangedListener:method\"}}{{/crossLink}},\nyou will receive the 'G2NSensorAlreadyStartListeningException' message.\n<br> If there nothing registered the event listener, \nyou will receive the 'G2NSensorEventListenerException' message.  \n<br> If wrong entered the {{#crossLink \"G2NMobile.Sensor.Delay\"}}{{/crossLink}},\nyou will receive the 'G2NWrongSensorDelayOptionException' message.   \n<br><br>\nSee Also :\t{{#crossLink \"G2NMobile.Sensor/addSensorChangedListener:method\"}}{{/crossLink}}, \n\t\t\t\t{{#crossLink \"G2NMobile.Sensor/stopListen:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "startListen",
+            "params": [
+                {
+                    "name": "delayOption",
+                    "description": "\n{{#crossLink \"G2NMobile.Sensor.Delay/FAST:attribute\"}}{{/crossLink}} that bring changed sensor value very quickly. \n{{#crossLink \"G2NMobile.Sensor.Delay/NORMAL:attribute\"}}{{/crossLink}} that bring changed sensor value on medium speed.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 781,
+            "description": "This method is stop the listener that detects the sensor value.\n<br><br>\nCaution!\n<br> If you are not call the {{#crossLink \"G2NMobile.Sensor/removeSensorChangedListener:method\"}}{{/crossLink}},\nyou will receive the 'G2NSensorAlreadyStopListeningException' message.\n<br><br>\nSee Also :\t{{#crossLink \"G2NMobile.Sensor/addSensorChangedListener:method\"}}{{/crossLink}}, \n\t\t\t\t{{#crossLink \"G2NMobile.Sensor/startListen:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "stopListen",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 802,
+            "description": "This method is get maximum range of the sensor in the sensor's unit.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getMaximumRange",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "MaximumRange",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 817,
+            "description": "This method is get name string of the sensor.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getName",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "SensorName",
+                "type": "String"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 832,
+            "description": "This method is get the power used by this sensor while in use.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getPower",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Fuction"
+                }
+            ],
+            "return": {
+                "description": "PowerValue",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 847,
+            "description": "This method is get resolution of the sensor in the sensor's unit.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getResolution",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Resolution",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 862,
+            "description": "This method is get the type of this sensor.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getType",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "SensorType",
+                "type": "String"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 877,
+            "description": "This method is get the vendor string of this sensor.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getVender",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Vender",
+                "type": "String"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 892,
+            "description": "This method is get a version of the sensor's module.\n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getVersion",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Version",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 907,
+            "description": "This method returns a string containing a concise, human-readable description of this object. \n<br><br>\nExample: {{#crossLink \"G2NMobile.Sensor.SensorManager/getSensor:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getDescript",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "Description",
+                "type": "String"
+            },
+            "class": "G2NMobile.Sensor",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 937,
+            "description": "A constant describing an accelerometer sensor type.\nAcceleration force along the x, y, z axis. \nUnits of measure is 'm/s^2'.  \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.SensorType/GYROSCOPE:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/LIGHT:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "ACCELEROMETER",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Sensor.SensorType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 954,
+            "description": "A constant describing a gyroscope sensor type.\nRate of rotation around the x, y, z axis.\nUnits of measure is 'rad/s'.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/LIGHT:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "GYROSCOPE",
+            "type": "Number",
+            "default": "4",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Sensor.SensorType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 971,
+            "description": "A constant describing a light sensor type.\nUnits of measure is 'lux'.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Sensor.SensorType/GYROSCOPE:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "LIGHT",
+            "type": "Number",
+            "default": "5",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Sensor.SensorType",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1003,
+            "description": "Bring changed sensor value very quickly.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.Delay/NORMAL:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "FAST",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Sensor.Delay",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1017,
+            "description": "Bring changed sensor value on medium speed.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor.Delay/FAST:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "NORMAL",
+            "type": "Number",
+            "default": "3",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Sensor.Delay",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1047,
+            "description": "Returns a Sensor class object as inputed the sensor type from first parameter.\n<br><br>\nCaution!\n<br>If wrong with the inputed value in first parameter for sensor Type, you receive the 'G2NWrongSensorTypeException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Sensor\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getSensor",
+            "params": [
+                {
+                    "name": "G2NMobile.Sensor.SensorType",
+                    "description": "\n{{#crossLink \"G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute\"}}{{/crossLink}}(1),\n{{#crossLink \"G2NMobile.Sensor.SensorType/GYROSCOPE:attribute\"}}{{/crossLink}}(4),\n{{#crossLink \"G2NMobile.Sensor.SensorType/LIGHT:attribute\"}}{{/crossLink}}(5)",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "This Sensor class is defined in receive return value from this method.",
+                "type": "G2NMobile.Sensor"
+            },
+            "example": [
+                "\n\t\tvar sensor = null;\n\t\tvar sensorListenerKey = null;\n\t\tvar started = false;\n\n\t\tfunction showSensorResult(returnValue) {\n\t\t\t$('#result_mobile_sensor').html(returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_sensor_getSensor').click(function() {\n\t\t\tif ( sensor !== null ) {\n\t\t\t\tshowSensorResult('Sensor is not null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tsensor = G2NMobile.Sensor.SensorManager.getSensor(G2NMobile.Sensor.SensorType.LIGHT, function(created) {\n\t\t\t\tsensor = created;\n\t\t\t\tshowSensorResult('Sensor get: ' + sensor.getObjKey());\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_addSensorChangedListener').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( sensorListenerKey !== null ) {\n\t\t\t\tshowSensorResult('Already Added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.addSensorChangedListener(\n\t\t\t\tfunction(returnValue) {\n\t\t\t\t\tvar result = '';\n\t\t\t\t\tfor ( var i=0 ; i<returnValue.length ; i++ ) {\n\t\t\t\t\t\tresult += returnValue[i];\n\t\t\t\t\t\tresult += '<br/>';\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\tshowSensorResult(result);\n\t\t\t\t},\n\t\t\t\tfunction(key) {\n\t\t\t\t\tsensorListenerKey = key;\n\t\t\t\t\tshowSensorResult('Added Listener');\n\t\t\t\t}\n\t\t\t);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_startListen').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( sensorListenerKey === null ) {\n\t\t\t\tshowSensorResult('Not added Listener');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( started === true ) {\n\t\t\t\tshowSensorResult('Already Started');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.startListen(G2NMobile.Sensor.Delay.FAST, function() {\n\t\t\t\tstarted = true;\n\t\t\t\tshowSensorResult('Start Listen');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_stopListen').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( sensorListenerKey === null ) {\n\t\t\t\tshowSensorResult('Not started Listening');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( started === false ) {\n\t\t\t\tshowSensorResult('Already Stoped');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.stopListen(function() {\n\t\t\t\tshowSensorResult('Stop Listen');\n\t\t\t\tstarted = false;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getMaximumRange').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getMaximumRange(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getName').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getName(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getPower').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getPower(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getResolution').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getResolution(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getType').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getType(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getVendor').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getVendor(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getVersion').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getVersion(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_getDescript').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.getDescript(showSensorResult);\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_removeSensorChangedListener').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\t\n\t\t\t\n\t\t\tif ( sensorListenerKey === null ) {\n\t\t\t\tshowSensorResult('Not added Listening');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.removeSensorChangedListener(sensorListenerKey, function() {\n\t\t\t\tshowSensorResult('Removed listener');\n\t\t\t\tsensorListenerKey = null;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_mobile_sensor_destructSensor').click(function() {\n\t\t\tif ( sensor === null ) {\n\t\t\t\tshowSensorResult('Sensor is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsensor.destruct(function() {\n\t\t\t\tsensor = null;\n\t\t\t\tshowSensorResult('Sensor Destructed');\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NMobile.Sensor.SensorManager",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1283,
+            "description": "Vibrate constantly for the specified period of millisecond times. \nAfter all this time, it will simply stop and not to be repeated.\n<br><br>\nCaution!\n<br>If You received the 'G2NVibrateTimeException' message saying that \"Currently set time is negative number.\",\ncheck that 'playTime' is setting properly with positive number and retry the operation.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Vibrate/playPatternVibrate:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Vibrate/stopVibrate:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "playVibrate",
+            "params": [
+                {
+                    "name": "playTime",
+                    "description": "\nIt is the number of milliseconds to vibrate on. \nIf 'playTime' number is 0 or negative number, it is disabled.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    $('#btn_mobile_vibrate_playVibrate').click(function() {\n        G2NMobile.Vibrate.playVibrate(1000);\n    }); "
+            ],
+            "class": "G2NMobile.Vibrate",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1313,
+            "description": "You can vibrate with a given pattern and the pattern to repeat. \nThis method is the durations for which to turn on or off the vibrator in milliseconds.\nThe first parameter indicates the number of milliseconds to wait before turning the vibrator on.\nAnd the seconds parameter indicates the number of milliseconds for which to keep the vibrator on before turning it off. \nParameters alternate between durations in milliseconds to turn the vibrator off or turn the vibrator on.\n<br><br>\nCaution!\n<br>If You received the 'G2NVibrateTimeException' message saying that \"Currently set time is negative number.\",\ncheck that parameters are setting properly with positive number and retry the operation.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Vibrate/playVibrate:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Vibrate/stopVibrate:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "playPatternVibrate",
+            "params": [
+                {
+                    "name": "waitTime",
+                    "description": "\nIt is the number of milliseconds to vibrate off.\nIf 'waitTime' number is 0 or negative number, it is disabled.",
+                    "type": "Number"
+                },
+                {
+                    "name": "playTime",
+                    "description": "\nIt is the number of milliseconds to vibrate on.\nIf 'waitTime' number is 0 or negative number, it is disabled.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    $('#btn_mobile_vibrate_playPatternVibrate').click(function() {\n        G2NMobile.Vibrate.playPatternVibrate(500, 3000);\n    });"
+            ],
+            "class": "G2NMobile.Vibrate",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1350,
+            "description": "This method is turn the vibrator off.\n\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Vibrate/playPatternVibrate:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Vibrate/playVibrate:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "stopVibrate",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    $('#btn_mobile_vibrate_stopVibrate').click(function() {\n        G2NMobile.Vibrate.stopVibrate();\n    });"
+            ],
+            "class": "G2NMobile.Vibrate",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1391,
+            "description": "This method is add the listener that detects the state of the Wi-Fi.\nTo detect changed event of wireless signal for Wi-Fi, add the listener.\nDoing event registration in the beginning.\nAfter that it add the listener.\n<br><br>\nCaution!\n<br> If Wi-Fi module state was disable, you will receive the 'G2NWifiDisabledException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi/removeWifiStateChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addOnWifiStateChangedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tvar wifiStateListenerKey = null;\n\t\tvar wifi_on = false;\n\n\t\tfunction showWifiResult(returnValue) {\n\t\t\t$('#result_mobile_wifi').html(returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_wifi_addWifiStateChangedListener').click(function() {\n\t\t\t\n\t\t\tif ( wifiStateListenerKey !== null ) {\n\t\t\t\tshowWifiResult('Listener is not null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tG2NMobile.Wifi.addWifiStateChangedListener(function(returnValue) {\n\t\t\t\tswitch ( returnValue[0] ) {\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.ENABLED:\n\t\t\t\t\t\tshowWifiResult('ENABLED');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.DISABLED:\n\t\t\t\t\t\tshowWifiResult('DISABLED');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.CONNECTING:\n\t\t\t\t\t\tshowWifiResult('CONNECTING');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.CONNECTED:\n\t\t\t\t\t\tshowWifiResult('CONNECTED');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.DISCONNECTING:\n\t\t\t\t\t\tshowWifiResult('DISCONNECTING');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\n\t\t\t\t\tcase G2NMobile.Wifi.WifiState.DISCONNECTED:\n\t\t\t\t\t\tshowWifiResult('DISCONNECTED');\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t}, function(key) {\n\t\t\t\twifiStateListenerKey = key;\n\t\t\t\tshowWifiResult('Added Listener');\n\t\t\t});\n\t\t});\n\t\n\t\n\t\t$('#btn_mobile_wifi_removeWifiStateChangedListener').click(function() {\n\t\t\tif ( wifiStateListenerKey === null ) {\n\t\t\t\tshowWifiResult('Listener is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tG2NMobile.Wifi.removeWifiStateChangedListener(wifiStateListenerKey, function() {\n\t\t\t\tshowWifiResult('Removed Listener');\n\t\t\t\twifiStateListenerKey = null;\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1472,
+            "description": "This method is remove the listener that detects the state of the Wi-Fi.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi/addWifiStateChangedListener:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NMobile.Wifi/addWifiStateChangedListener:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeWifiStateChangedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1489,
+            "description": "This method is checked whether Wi-Fi is enabled or disabled.",
+            "itemtype": "method",
+            "name": "getWifiEnabled",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "flag\tTrue to enable, False to disable.",
+                "type": "Boolean"
+            },
+            "example": [
+                "\n\t\tfunction showWifiResult(returnValue) {\n\t\t\t$('#result_mobile_wifi').html(returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_wifi_getWifiEnabled').click(function() {\n\t\t\tG2NMobile.Wifi.getWifiEnabled(function(returnValue) {\n\t\t\t\twifi_on = returnValue;\n\t\t\t\tshowWifiResult('' + wifi_on);\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1514,
+            "description": "Set enable or disable Wi-Fi.",
+            "itemtype": "method",
+            "name": "setWifiEnabled",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "True to enable, False to disable.",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tfunction showWifiResult(returnValue) {\n\t\t\t$('#result_mobile_wifi').html(returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_wifi_setWifiEnabled').click(function() {\n\t\t\tif ( wifi_on === true )\n\t\t\t\twifi_on = false;\n\t\t\telse\n\t\t\t\twifi_on = true;\n\t\t\t\n\t\t\tG2NMobile.Wifi.setWifiEnabled(wifi_on, function() {\n\t\t\t\tshowWifiResult('set wifi');\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1543,
+            "description": "Makes connectable Wi-Fi list of AP(Access Point), after detect the wireless signal.\nThrough this method you creates object of {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}} class.\n<br><br>\nCaution!\n<br> If state of Wi-Fi module is not enabled, you will receive 'G2NWifiDisabledException' message. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getWifiList",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Funciton"
+                }
+            ],
+            "return": {
+                "description": "Object of WifiList class.",
+                "type": "G2NMobile.Wifi.WifiList"
+            },
+            "example": [
+                "\n\t\tfunction showWifiResult(returnValue) {\n\t\t\t$('#result_mobile_wifi').html(returnValue);\n\t\t}\n\n\t\t$('#btn_mobile_wifi_getWifiList').click(function() {\n\t\t\t\n\t\t\tG2NMobile.Wifi.getWifiList(function(list) {\n\t\t\t\twifiList = list;\n\t\t\t\tlist.getWifiListSize(function (length) {\n\t\t\t\t\tif ( length > 0 ) {\n\t\t\t\t\t\tlist.getInfo(0, function(info) {\n\t\t\t\t\t\t\tinfo.getSSID(showWifiResult);\n\t\t\t\t\t\t});\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1582,
+            "description": "This method will trying to connect an AP in Wi-Fi list.\nEntering the password does not permit.\nIt is allowed to stored the password from Android device already. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "connectWifi",
+            "params": [
+                {
+                    "name": "wifiList",
+                    "description": "",
+                    "type": "G2NMobile.Wifi.WifiList"
+                },
+                {
+                    "name": "index",
+                    "description": "\nIt indicate a index of Wi-Fi index, and permit from zero(0) to \n{{#crossLink \"G2NMobile.Wifi.WifiList/getWifiListSize:method\"}}{{/crossLink}}.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Wifi.connectWifi(wifiList, 0);"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1607,
+            "description": "This method will trying to disconnect an AP in Wi-Fi list.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi./getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "disconnectWifi",
+            "params": [
+                {
+                    "name": "wifiList",
+                    "description": "",
+                    "type": "G2NMobile.Wifi.WifiList"
+                },
+                {
+                    "name": "index",
+                    "description": "\nIt indicate a index of Wi-Fi index, and permit from zero(0) to \n{{#crossLink \"G2NMobile.Wifi.WifiList/getWifiListSize:method\"}}{{/crossLink}}.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tG2NMobile.Wifi.disconnectWifi(wifiList, 0);"
+            ],
+            "class": "G2NMobile.Wifi",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1648,
+            "description": "It indicate enabled state of Wi-Fi module in Android device.   \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/DISABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTED:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "ENABLED",
+            "type": "Number",
+            "default": "0",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1666,
+            "description": "It indicate disabled state of Wi-Fi module in Android device.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}}, \n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTED:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "DISABLED",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1685,
+            "description": "It indicate connecting state of one of detected Wi-Fi list.  \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTED:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "CONNECTING",
+            "type": "Number",
+            "default": "2",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1703,
+            "description": "It indicate connected state of one of detected Wi-Fi list.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTED:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "CONNECTED",
+            "type": "Number",
+            "default": "3",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1721,
+            "description": "It indicate disconnecting state of one of detected Wi-Fi list.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTED:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "DISCONNECTING",
+            "type": "Number",
+            "default": "4",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1739,
+            "description": "It indicate disconnected state of one of detected Wi-Fi list.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiState/ENABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISABLED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTING:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/CONNECTED:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiState/DISCONNECTING:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "DISCONNECTED",
+            "type": "Number",
+            "default": "5",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NMobile.Wifi.WifiState",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1787,
+            "description": "Return the network name.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiInfo/getLevel:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiInfo/getBSSID:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getSSID",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "SSID",
+                "type": "String"
+            },
+            "class": "G2NMobile.Wifi.WifiInfo",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1805,
+            "description": "Return the detected signal level in dBm.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiInfo/getSSID:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiInfo/getBSSID:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getLevel",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "level",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Wifi.WifiInfo",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1823,
+            "description": "Return the address of the AP(access point).\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiInfo/getSSID:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NMobile.Wifi.WifiInfo/getLevel:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getBSSID",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "BSSID",
+                "type": "String"
+            },
+            "class": "G2NMobile.Wifi.WifiInfo",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1869,
+            "description": "This method is returned size of Wi-Fi list.\nThrough this size it has index from zero(0) to return value.\n<br><br>\nCaution!\n<br> If Wi-Fi list does not exist, you will receive 'G2NWifiListNullException' message. \n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiList/getInfo:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getWifiListSize",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "wifiListSize",
+                "type": "Number"
+            },
+            "class": "G2NMobile.Wifi.WifiList",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NMobile.js",
+            "line": 1890,
+            "description": "This method is used to create {{#crossLink \"G2NMobile.Wifi.WifiInfo\"}}{{/crossLink}} object.\nInput the index in first parameter of Wi-Fi list, for index about a AP of Wi-Fi list.\nJust obtain information for AP about{{#crossLink \"G2NMobile.Wifi.WifiInfo/SSID:attribute\"}}{{/crossLink}},\n{{#crossLink \"G2NMobile.Wifi.WifiInfo/level:attribute\"}}{{/crossLink}}, \n{{#crossLink \"G2NMobile.Wifi.WifiInfo/BSSID:attribute\"}}{{/crossLink}} by this method.   \n<br><br>\nCaution!\n<br> If Wi-Fi list dose not exist, you will receive 'G2NWifiListNullException',\n<br> If range of size of Wi-Fi list were out, you received 'G2NWrongWifiListIndexException' message.\n<br><br>\nSee Also : {{#crossLink \"G2NMobile.Wifi.WifiInfo\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NMobile.Wifi/getWifiList:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getInfo",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "\nIt indicate the detected Wi-Fi list, it permit from zero(0) to return value of\n{{#crossLink \"G2NMobile.Wifi.WifiList/getWIfiLIstSize:method\"}}{{/crossLink}}.",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "WifiListInfo",
+                "type": "G2NMobile.Wifi.WifiInfo"
+            },
+            "class": "G2NMobile.Wifi.WifiList",
+            "module": "G2NMobile",
+            "namespace": "G2NMobile"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 48,
+            "description": "It indicates request of GET method.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.RequestMethod/POST:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/PUT:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/DELETE:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "GET",
+            "type": "Number",
+            "default": "0",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Http.RequestMethod",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 64,
+            "description": "It indicates request of POST method.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.RequestMethod/GET:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/PUT:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/DELETE:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "POST",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Http.RequestMethod",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 80,
+            "description": "It indicates request of PUT method.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.RequestMethod/POST:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/GET:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/DELETE:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "PUT",
+            "type": "Number",
+            "default": "2",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Http.RequestMethod",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 95,
+            "description": "It indicates request of DELETE method.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.RequestMethod/GET:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/POST:attribute\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Http.RequestMethod/PUT:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "DELETE",
+            "type": "Number",
+            "default": "3",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Http.RequestMethod",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 127,
+            "description": "Create the request queue.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/addRequest:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "HttpRequestQueue",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tfunction showHttpResult(returnValue) {\n\t\t\t$('#result_network_http').text(String(returnValue));\n\t\t}\n\t\t\n\t\tvar requestQueue = null;\n\t\tvar request = null;\n\t\t\n\t\t$('#btn_to_network_http_create_request_queue').click(function() {\n\t\t\trequestQueue = new G2NNetwork.Http.HttpRequestQueue(function() {\n\t\t\t\tshowHttpResult('Queue Created!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t\n\t\t$('#btn_to_network_http_create_request').click(function() {\n\t\t\t\n\t\t\tvar method = G2NNetwork.Http.RequestMethod.GET;\n\t\t\t// Weather Information Service URL\n\t\t\tvar url = 'http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1144060000';\n\t\t\tvar params = {\n\t\t\t\tkey: 'value',\n\t\t\t\tasd: 'test'\n\t\t\t};\n\t\t\t\n\t\t\trequest = new G2NNetwork.Http.HttpRequest(method, url, params, function() {\n\t\t\t\tshowHttpResult('Request Created!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_http_set_response').click(function() {\n\t\t\t\n\t\t\tif ( request === null ) {\n\t\t\t\tshowHttpResult('Request is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\trequest.setResponseListener(showHttpResult, function() {\n\t\t\t\tshowHttpResult('Setting Listener!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_http_add_request').click(function() {\n\t\t\t\n\t\t\tif ( request === null ) {\n\t\t\t\tshowHttpResult('Request is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( requestQueue === null ) {\n\t\t\t\tshowHttpResult('RequestQueue is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\trequestQueue.addRequest(request, function() {\n\t\t\t\tshowHttpResult('Added Request!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_http_start_request_queue').click(function() {\n\t\t\tif ( requestQueue === null ) {\n\t\t\t\tshowHttpResult('RequestQueue is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\trequestQueue.start(function() {\n\t\t\t\t//showHttpResult('Start RequestQueue!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_http_stop_request_queue').click(function() {\n\t\t\tif ( requestQueue === null ) {\n\t\t\t\tshowHttpResult('RequestQueue is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\trequestQueue.stop(function() {\n\t\t\t\tshowHttpResult('Stop RequestQueue!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_http_delete_request_queue').click(function() {\n\t\t\tif ( requestQueue === null ) {\n\t\t\t\tshowHttpResult('RequestQueue is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\trequestQueue.destruct(function() {\n\t\t\t\trequestQueue = null;\n\t\t\t\tshowHttpResult('Deleted RequestQueue!');\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NNetwork.Http.HttpRequestQueue",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 237,
+            "description": "Add the {{#crossLink \"G2NNetwork.Http.HttpRequest\"}}{{/crossLink}} Class objects in request queue. \n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequest\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/HttpRequestQueue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addRequest",
+            "params": [
+                {
+                    "name": "request",
+                    "description": "",
+                    "type": "G2NNetwork.Http.HttpRequest"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Functino"
+                }
+            ],
+            "class": "G2NNetwork.Http.HttpRequestQueue",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 254,
+            "description": "Every request in queue will be request to web servers in sequence. \n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/stop:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/HttpRequestQueue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "start",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Http.HttpRequestQueue",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 270,
+            "description": "Requesting to web servers will be stop.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/start:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/HttpRequestQueue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "stop",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Http.HttpRequestQueue",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 304,
+            "description": "It is constructor.\nCreate the request by the url of web servers.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequest/setResponseListener:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/HttpRequestQueue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "HttpRequest",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "method",
+                    "description": "",
+                    "type": "G2NNetwork.Http.RequestMethod"
+                },
+                {
+                    "name": "url",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Http.HttpRequest",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 326,
+            "description": "It is listener for receive the response from web servers.  \n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Http.HttpRequest/HttpRequest:method\"}}{{/crossLink}}\n<br><br>\nExample: {{#crossLink \"G2NNetwork.Http.HttpRequestQueue/HttpRequestQueue:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "setResponseListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Http.HttpRequest",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 362,
+            "description": "Description\nIt is constructor.\nAfter select using protocol, you will create object of Socket class.\nIt is not open a socket. \nOpening the socket refer to {{#crossLink \"G2NNetwork.Socket/openAndListen:method\"}}{{/crossLink}} method.  \n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket.Address\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/openAndListen:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket.Protocol/TCP:attribute\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket.Protocol/UDP:attribute\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "Socket",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "address",
+                    "description": "",
+                    "type": "G2NNetwork.Socket.Address"
+                },
+                {
+                    "name": "protocol",
+                    "description": "",
+                    "type": "G2NNetwork.Socket.Protocol"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n\t\tfunction showSocketResult(returnValue) {\n\t\t\t$('#result_network_socket').text(String(returnValue));\n\t\t}\n\t\t\n\t\tvar address = null;\n\t\tvar socket_ip = '210.118.74.165';\n\t\tvar socket_port = 33333;\n\t\t\n\t\t$('#btn_to_network_socket_create_address').click(function() {\n\t\t\tif ( address !== null ) {\n\t\t\t\tshowSocketResult('address is not null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress = new G2NNetwork.Socket.Address(socket_ip, socket_port, function() {\n\t\t\t\tshowSocketResult('Address Created!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_getPort').click(function() {\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress.getPort(showSocketResult);\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_setPort').click(function() {\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress.setPort(33336, function() {\n\t\t\t\tshowSocketResult('port changed!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_getIP').click(function() {\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress.getIP(showSocketResult);\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_setIP').click(function() {\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress.setIP('210.118.74.166', function() {\n\t\t\t\tshowSocketResult('ip changed!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_delete_address').click(function() {\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\taddress.destruct(function() {\n\t\t\t\tshowSocketResult('Address Deleted!');\n\t\t\t\taddress = null;\n\t\t\t});\n\t\t});\n\t\t\n\t\tvar socket = null;\n\t\tvar receiveListenerKey = null;\n\t\tvar connectedListenerKey = null;\n\t\tvar disconnectedListenerKey = null;\n\t\tvar listen = false;\n\t\n\t\t$('#btn_to_network_socket_create_socket').click(function() {\n\t\t\tif ( socket !== null ) {\n\t\t\t\tshowSocketResult('socket is not null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( address === null ) {\n\t\t\t\tshowSocketResult('address is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket = new G2NNetwork.Socket(address, G2NNetwork.Socket.Protocol.TCP, function() {\n\t\t\t\tshowSocketResult('Socket Created!');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_addReceiveMessageListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( receiveListenerKey !== null ) {\n\t\t\t\tshowSocketResult('already added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.addReceiveMessageListener(showSocketResult, function(key) {\n\t\t\t\tshowSocketResult('added receive listener');\n\t\t\t\treceiveListenerKey = key;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_addConnectedListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( connectedListenerKey !== null ) {\n\t\t\t\tshowSocketResult('already added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.addConnectedListener(showSocketResult, function(key) {\n\t\t\t\tshowSocketResult('added connected listener');\n\t\t\t\tconnectedListenerKey = key;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_addDisconnectedListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( disconnectedListenerKey !== null ) {\n\t\t\t\tshowSocketResult('already added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.addDisconnectedListener(function() {\n\t\t\t\tlisten = false;\n\t\t\t\t\n\t\t\t\tshowSocketResult('Disconnected');\n\t\t\t}, function(key) {\n\t\t\t\tshowSocketResult('added disconnected listener');\n\t\t\t\tdisconnectedListenerKey = key;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_openAndListen').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( receiveListenerKey === null ) {\n\t\t\t\tshowSocketResult('receive listener is not added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( connectedListenerKey === null ) {\n\t\t\t\tshowSocketResult('connected listener is not added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( disconnectedListenerKey === null ) {\n\t\t\t\tshowSocketResult('disconnected listener is not added');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( listen === true ) {\n\t\t\t\tshowSocketResult('already listening');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.openAndListen(function() {\n\t\t\t\tlisten = true;\n\t\t\t\tshowSocketResult('socket is listenning...');\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_send').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.sendMessage('Hello G2N!', function() {\n\t\t\t\tshowSocketResult('Send Success!');\n\t\t\t});\n\t\t});\n\t\n\t\t$('#btn_to_network_socket_close').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( listen === false) {\n\t\t\t\tshowSocketResult('socket is not open');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.close(function() {\n\t\t\t\tshowSocketResult('Close Success!');\n\t\t\t\tlisten = false;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_removeReceiveMessageListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( receiveListenerKey === null ) {\n\t\t\t\tshowSocketResult('not added receive listener');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.removeReceiveMessageListener(receiveListenerKey, function() {\n\t\t\t\tshowSocketResult('removed receive listener');\n\t\t\t\treceiveListenerKey = null;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_removeConnectedListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( connectedListenerKey === null ) {\n\t\t\t\tshowSocketResult('not added connected listener');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.removeConnectedListener(connectedListenerKey, function() {\n\t\t\t\tshowSocketResult('removed connected listener');\n\t\t\t\tconnectedListenerKey = null;\n\t\t\t});\n\t\t});\n\n\t\t$('#btn_to_network_socket_removeDisconnectedListener').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tif ( disconnectedListenerKey === null ) {\n\t\t\t\tshowSocketResult('not added disconencted listener');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.removeDisconnectedListener(disconnectedListenerKey, function() {\n\t\t\t\tshowSocketResult('removed disconencted listener');\n\t\t\t\tdisconnectedListenerKey = null;\n\t\t\t});\n\t\t});\n\t\t\n\t\t$('#btn_to_network_socket_delete_socket').click(function() {\n\t\t\tif ( socket === null ) {\n\t\t\t\tshowSocketResult('socket is null');\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif ( listen === true ) {\n\t\t\t\tshowSocketResult('socket is listenning...');\n\t\t\t\treturn;\n\t\t\t}\n\t\t\t\n\t\t\tsocket.destruct(function() {\n\t\t\t\tshowSocketResult('Deleted socket');\n\t\t\t\tsocket = null;\n\t\t\t});\n\t\t});"
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 663,
+            "description": "Open a socket.\nThis method is start the listener that detects whether normally open the socket.\nYou can add listener by {{#crossLink \"G2NNetwork.Socket/addConnectedListener:method\"}}{{/crossLink}}.\n<br><br>\nCaution!\n<br> When entered IP address was wrong, you will receive 'UnknownHostException' message.\n<br> And if occur the problem of I/O, you will receive 'IOException' message.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/close:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/addConnectedListener:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeConnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "openAndListen",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 687,
+            "description": "IP address and Port number of host connected socket return by object of {{#crossLink \"G2NNetwork.Socket.Address\"}}{{/crossLink}} class.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getAddress",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "address",
+                "type": "G2NNetwork.Socket.Address"
+            },
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 704,
+            "description": "Send the message to host through IP address and Port number from connected socket. \n<br><br>\nCaution!\n<br> If occur the problem of I/O, you will receive 'IOException' message.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/addReceiveMessageListener:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeReceiveMessageListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "sendMessage",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 725,
+            "description": "To detect event about receive message from external server, register the listener. \n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/sendMessage:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeReceiveMessageListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addReceiveMessageListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 743,
+            "description": "To stop detect event about receive message from external server, unregister the listener. \n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/sendMessage:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/addReceiveMessageListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeReceiveMessageListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 761,
+            "description": "To detect event whether open the socket, add the listener.\nDoing event registration in the beginning.\nAfter that it add the listener.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/openAndListen:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeConnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addConnectedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 781,
+            "description": "To stop detect event whether open the socket, remove the listener.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket/openAndListen:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NNetwork.Socket/addConnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeConnectedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 798,
+            "description": "To detect event whether close the socket, add the listener.\nDoing event registration in the beginning.\nAfter that it add the listener.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/close:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeDisconnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "addDisconnectedListener",
+            "params": [
+                {
+                    "name": "listener",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 818,
+            "description": "To stop detect event whether close the socket, remove the listener.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/close:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/addDisconnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "removeDisconnectedListener",
+            "params": [
+                {
+                    "name": "listenerKey",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 836,
+            "description": "Close the connected socket.\nThis method is start the listener that detects whether normally closed the socket.\nYou can add listener by {{#crossLink \"G2NNetwork.Socket/addDisconnectedListener:method\"}}{{/crossLink}}.\n<br><br>\nSee Also :\t{{#crossLink \"G2NNetwork.Socket/openAndListen:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/addDisconnectedListener:method\"}}{{/crossLink}},\n\t\t\t\t{{#crossLink \"G2NNetwork.Socket/removeDisconnectedListener:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "close",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 873,
+            "description": "Use the TCP protocol when do socket communication.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Protocol/UDP:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "TCP",
+            "type": "Number",
+            "default": "0",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Socket.Protocol",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 887,
+            "description": "Use the UDP protocol when do socket communication.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Protocol/TCP:attribute\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "UDP",
+            "type": "Number",
+            "default": "1",
+            "static": 1,
+            "readonly": "",
+            "class": "G2NNetwork.Socket.Protocol",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 918,
+            "description": "It is constructor.\nSet IP address and Port number\nOther way, It is able to set from \n{{#crossLink \"G2NNetwork.Socket.Address/getIP:method\"}}{{/crossLink}} and\n{{#crossLink \"G2NNetwork.Socket.Address/getPort:method\"}}{{/crossLink}}.\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "Address",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "ip",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "port",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket.Address",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 939,
+            "description": "Set the IP address that will connect to host.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address/getIP:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "setIP",
+            "params": [
+                {
+                    "name": "ip",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket.Address",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 956,
+            "description": "Return the set IP address.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address/setIP:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getIP",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "ip",
+                "type": "String"
+            },
+            "class": "G2NNetwork.Socket.Address",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 973,
+            "description": "Set the Port number that will connect to host.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address/getPort:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "setPort",
+            "params": [
+                {
+                    "name": "port",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "G2NNetwork.Socket.Address",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NNetwork.js",
+            "line": 990,
+            "description": "Return the set Port number.\n<br><br>\nSee Also : {{#crossLink \"G2NNetwork.Socket.Address/setPort:method\"}}{{/crossLink}}\n<br><br>\nExample : {{#crossLink \"G2NNetwork.Socket/Socket:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "getPort",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "port",
+                "type": "Number"
+            },
+            "class": "G2NNetwork.Socket.Address",
+            "module": "G2NNetwork",
+            "namespace": "G2NNetwork"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 40,
+            "description": "Pop up the dialog for input the keyboard in the Android device window.\nReceive the input message after input the keyboard and click the 'Enter'.  \nGear2 is no knowing when click the 'Enter' from Android device.",
+            "itemtype": "method",
+            "name": "getText",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    function showKeyboardResult(returnValue) {\n        $('#result_util_keyboard').text('Result: ' + returnValue);\n    }\n    \n    $('#btn_util_keyboard_getText').click(function() {\n        G2NUtil.Keyboard.getText(showKeyboardResult);\n    });"
+            ],
+            "class": "G2NUtil.Keyboard",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 97,
+            "description": "Send a Info log message in android development environment.\n<br><br>\nSee Also : {{#crossLink \"G2NUtil.Log/debug:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/warning:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/error:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "info",
+            "params": [
+                {
+                    "name": "tag",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    var LOG_TAG = 'Gear 2 Net Tag'; \n    G2NUtil.Log.info(LOG_TAG, 'info log');"
+            ],
+            "class": "G2NUtil.Log",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 118,
+            "description": "Send a Debug log message in android development environment.\n<br><br>\nSee Also : {{#crossLink \"G2NUtil.Log/info:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/warning:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/error:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "debug",
+            "params": [
+                {
+                    "name": "tag",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    var LOG_TAG = 'Gear 2 Net Tag'; \n    G2NUtil.Log.debug(LOG_TAG, 'debug log');"
+            ],
+            "class": "G2NUtil.Log",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 139,
+            "description": "Send a Warning log message in android development environment.\n<br><br>\nSee Also : {{#crossLink \"G2NUtil.Log/info:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/debug:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/error:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "warning",
+            "params": [
+                {
+                    "name": "tag",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    var LOG_TAG = 'Gear 2 Net Tag'; \n    G2NUtil.Log.warning(LOG_TAG, 'warning log');"
+            ],
+            "class": "G2NUtil.Log",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 160,
+            "description": "Send a Error log message in android development environment.\n<br><br>\nSee Also : {{#crossLink \"G2NUtil.Log/info:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/debug:method\"}}{{/crossLink}},\n           {{#crossLink \"G2NUtil.Log/warning:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "error",
+            "params": [
+                {
+                    "name": "tag",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    var LOG_TAG = 'Gear 2 Net Tag'; \n    G2NUtil.Log.error(LOG_TAG, 'error log');"
+            ],
+            "class": "G2NUtil.Log",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        },
+        {
+            "file": "api\\G2NUtil.js",
+            "line": 196,
+            "description": "The pop up a web page on your android device.\nIf you entered into the first parameter with incorrectly URL, It will pop up a wrong web page and will not occurred Exception.",
+            "itemtype": "method",
+            "name": "showPage",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "\nIf you not attach 'http://' or 'https://' to in front of URL, it will be automatically judge of 'http://'. \nAlso, it allows to differing use of uppercase and lowercase letters.\nBut, After 'http://' or 'https://', It is not allowed.",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "example": [
+                "\n    $('#btn_util_webviewer_showPage').click(function() {\n        G2NUtil.WebViewer.showPage('http://developer.samsung.com/samsung-gear');\n    });"
+            ],
+            "class": "G2NUtil.WebViewer",
+            "module": "G2NUtil",
+            "namespace": "G2NUtil"
+        }
+    ],
+    "warnings": []
+}

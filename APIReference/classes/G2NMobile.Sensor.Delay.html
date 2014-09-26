@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="yui-overrride">
+<head>
+    <meta charset="utf-8">
+    <title>G2NMobile.Sensor.Delay - Gear 2 Net</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1 class="blue-main-title">
+		<a href="../index.html">
+			<img src="../assets/img/logo.png" alt="Gear2Net">
+		</a>
+	    </h1>
+        </div>
+        <div class="yui3-u-1-4 version project-version">
+            API Docs for: 0.1.1
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/G2NMobile.Audio.html">G2NMobile.Audio</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AdjustVolumeOption.html">G2NMobile.Audio.AdjustVolumeOption</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AudioMode.html">G2NMobile.Audio.AudioMode</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.VolumeType.html">G2NMobile.Audio.VolumeType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Battery.html">G2NMobile.Battery</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.html">G2NMobile.Sensor</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.Delay.html">G2NMobile.Sensor.Delay</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorManager.html">G2NMobile.Sensor.SensorManager</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorType.html">G2NMobile.Sensor.SensorType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Vibrate.html">G2NMobile.Vibrate</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.html">G2NMobile.Wifi</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiInfo.html">G2NMobile.Wifi.WifiInfo</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiList.html">G2NMobile.Wifi.WifiList</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiState.html">G2NMobile.Wifi.WifiState</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.html">G2NNetwork.Http</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequest.html">G2NNetwork.Http.HttpRequest</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequestQueue.html">G2NNetwork.Http.HttpRequestQueue</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.RequestMethod.html">G2NNetwork.Http.RequestMethod</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.html">G2NNetwork.Socket</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Address.html">G2NNetwork.Socket.Address</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Protocol.html">G2NNetwork.Socket.Protocol</a></li>
+            
+                <li><a href="../classes/G2NUtil.Keyboard.html">G2NUtil.Keyboard</a></li>
+            
+                <li><a href="../classes/G2NUtil.Log.html">G2NUtil.Log</a></li>
+            
+                <li><a href="../classes/G2NUtil.WebViewer.html">G2NUtil.WebViewer</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/G2NMobile.html">G2NMobile</a></li>
+            
+                <li><a href="../modules/G2NNetwork.html">G2NNetwork</a></li>
+            
+                <li><a href="../modules/G2NUtil.html">G2NUtil</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>G2NMobile.Sensor.Delay</h1>
+<div class="meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/api_G2NMobile.js.html#l992"><code>api\G2NMobile.js:992</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/G2NMobile.html">G2NMobile</a>
+        
+    
+
+    
+    
+</div>
+
+
+
+<h3>Summary</h3>
+<div class="intro">
+    <p>This class is a kind of Delay type which indicate the changed sensor value.<br>It is subordinate to the Sensor Class. 
+And used in Sensor class of G2NMobile module.</p>
+
+</div>
+
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+        
+        
+            <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+
+            
+
+            
+                <div class="index-section attrs">
+                    <h3>Attributes</h3>
+
+                    <ul class="index-list attrs">
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_FAST">FAST</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_NORMAL">NORMAL</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+        </div>
+
+        
+
+        
+
+        
+            <div id="attrs" class="api-class-tabpanel">
+                <h2 class="off-left">Attributes</h2>
+
+                
+                    <div id="attr_FAST" class="attr item">
+    <a name="config_FAST"></a> 
+    <h3 class="name"><code>FAST</code></h3>
+    <span class="type">Number</span>
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag readonly">readonly</span>
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/api_G2NMobile.js.html#l1003"><code>api\G2NMobile.js:1003</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Bring changed sensor value very quickly.
+<br><br>
+See Also : <a href="../classes/G2NMobile.Sensor.Delay.html#attr_NORMAL" class="crosslink">NORMAL</a></p>
+
+    </div>
+
+    
+        <p><strong>Default:</strong> 1</p>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_NORMAL" class="attr item">
+    <a name="config_NORMAL"></a> 
+    <h3 class="name"><code>NORMAL</code></h3>
+    <span class="type">Number</span>
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag readonly">readonly</span>
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/api_G2NMobile.js.html#l1017"><code>api\G2NMobile.js:1017</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Bring changed sensor value on medium speed.
+<br><br>
+See Also : <a href="../classes/G2NMobile.Sensor.Delay.html#attr_FAST" class="crosslink">FAST</a></p>
+
+    </div>
+
+    
+        <p><strong>Default:</strong> 3</p>
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

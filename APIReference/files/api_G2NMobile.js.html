@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="en" class="yui-overrride">
+<head>
+    <meta charset="utf-8">
+    <title>api\G2NMobile.js - Gear 2 Net</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1 class="blue-main-title">
+		<a href="../index.html">
+			<img src="../assets/img/logo.png" alt="Gear2Net">
+		</a>
+	    </h1>
+        </div>
+        <div class="yui3-u-1-4 version project-version">
+            API Docs for: 0.1.1
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/G2NMobile.Audio.html">G2NMobile.Audio</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AdjustVolumeOption.html">G2NMobile.Audio.AdjustVolumeOption</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AudioMode.html">G2NMobile.Audio.AudioMode</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.VolumeType.html">G2NMobile.Audio.VolumeType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Battery.html">G2NMobile.Battery</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.html">G2NMobile.Sensor</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.Delay.html">G2NMobile.Sensor.Delay</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorManager.html">G2NMobile.Sensor.SensorManager</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorType.html">G2NMobile.Sensor.SensorType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Vibrate.html">G2NMobile.Vibrate</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.html">G2NMobile.Wifi</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiInfo.html">G2NMobile.Wifi.WifiInfo</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiList.html">G2NMobile.Wifi.WifiList</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiState.html">G2NMobile.Wifi.WifiState</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.html">G2NNetwork.Http</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequest.html">G2NNetwork.Http.HttpRequest</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequestQueue.html">G2NNetwork.Http.HttpRequestQueue</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.RequestMethod.html">G2NNetwork.Http.RequestMethod</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.html">G2NNetwork.Socket</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Address.html">G2NNetwork.Socket.Address</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Protocol.html">G2NNetwork.Socket.Protocol</a></li>
+            
+                <li><a href="../classes/G2NUtil.Keyboard.html">G2NUtil.Keyboard</a></li>
+            
+                <li><a href="../classes/G2NUtil.Log.html">G2NUtil.Log</a></li>
+            
+                <li><a href="../classes/G2NUtil.WebViewer.html">G2NUtil.WebViewer</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/G2NMobile.html">G2NMobile</a></li>
+            
+                <li><a href="../modules/G2NNetwork.html">G2NNetwork</a></li>
+            
+                <li><a href="../modules/G2NUtil.html">G2NUtil</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: api\G2NMobile.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * G2NMobile module have control of the Android-Phone conditions. 
+ * Basically, Providing for this module is the Audio, Battery, Wifi, Vibrate. 
+ * 
+ * @module G2NMobile
+ */
+
+define([&#x27;G2NSystem&#x27;, &#x27;G2NConnect&#x27;, &#x27;G2NMsg&#x27;, &#x27;G2NObject&#x27;], function(G2NSystem, G2NConnect, G2NMsg, G2NObject) {
+	
+	var Audio = {},
+		Battery = {},
+		Sensor = {},
+		Vibrate = {},
+		Wifi = {},
+		publicMember = {},
+		isInit = false;
+	
+	function initMobile() {
+
+		G2NSystem.debugLog(&#x27;G2NMobile Init!&#x27;);
+		Sensor.SensorManager = {};
+		Wifi.WifiInfo = {};
+		Wifi.WifiList = {};
+		
+		/*
+		 * Object Keys
+		 */
+		Battery.objKey				= &#x27;net.gear2net.api.mobile.battery.G2NBattery&#x27;;
+		Audio.objKey				= &#x27;net.gear2net.api.mobile.audio.G2NAudio&#x27;;
+		Sensor.objKey				= &#x27;net.gear2net.api.mobile.sensor.G2NSensor&#x27;;
+		Sensor.SensorManager.objKey	= &#x27;net.gear2net.api.mobile.sensor.G2NSensorManager&#x27;;
+		Vibrate.objKey				= &#x27;net.gear2net.api.mobile.vibrate.G2NVibrate&#x27;;
+		Wifi.objKey					= &#x27;net.gear2net.api.mobile.wifi.G2NWifi&#x27;;
+		Wifi.WifiInfo.objKey		= &#x27;net.gear2net.api.mobile.wifi.G2NWifiInfo&#x27;;
+		Wifi.WifiList.objKey		= &#x27;net.gear2net.api.mobile.wifi.G2NWifiList&#x27;;
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * This class controls the battery condition of Android-Phone.
+		 * For now, it is able controls to just charge in Android-Phone battery.
+		 * It is singleton. Whatever you make several object, perceived as one object.
+		 * 
+		 * @namespace G2NMobile
+		 * @class Battery
+		 */		
+		Battery.member = {
+
+				
+			/**
+			 * To detect changed event by charge of battery, add the listener.
+			 * The cause of an detected event is not always change by charge of battery.
+			 * Sometimes, It is able cause to detection by more shorter cycle.
+			 * Charge of battery has a percent(%) unit a positive integer value.   
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Battery/removeBatteryChangedListener:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method addBatteryChangedListener
+			 * @param {function} listener
+			 * @param {function} callback
+			 * @example
+			 *		var batteryListenerKey = null;
+			 *
+			 *		function showBatteryResult(returnValue) {
+			 *			$(&#x27;#result_mobile_battery&#x27;).text(&#x27;Result: &#x27; + returnValue[0]);
+			 *		}
+			 *
+			 *		function addListenerCallback(key) {
+			 *			batteryListenerKey = key;
+			 *		}
+			 *
+			 *		function removeListenerCallback() {
+			 *			batteryListenerKey = null;
+			 *		}
+			 *
+			 *		$(&#x27;#btn_mobile_battery_addBatteryChangedListener&#x27;).click(function() {
+			 *			G2NMobile.Battery.addBatteryChangedListener(showBatteryResult, addListenerCallback);
+			 *		});
+			 *
+			 *		$(&#x27;#btn_mobile_battery_removeBatteryChangedListener&#x27;).click(function() {
+			 *			if ( batteryListenerKey !== null ) {
+			 *				G2NMobile.Battery.removeBatteryChangedListener(batteryListenerKey, removeListenerCallback);
+			 *			}
+			 *		}
+			 */
+			addBatteryChangedListener: function addBatteryChangedListener(listener, callback) {
+				var msg = G2NMsg.createRegistrationListenerMsg(Battery.objKey, listener, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Remove the event listener about change by charge of battery.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Battery/addBatteryChangedListener:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Battery/addBatteryChangedListener:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method removeBatteryChangedListener
+			 * @param {String} listenerKey
+			 * @param {function} callback
+			 */
+			removeBatteryChangedListener: function removeBatteryChangedListener(listenerKey, callback) {
+				var msg = G2NMsg.createUnregistrationListenerMsg(Battery.objKey, listenerKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			}
+			
+		};
+		
+
+		//============================================================================================================================
+
+		
+		/**
+		 * This class controls for audio of Android-Phone.
+		 * It is singleton. Whatever you make several object, perceived as one object.
+		 *  
+		 * @namespace G2NMobile
+		 * @class Audio
+		 */
+		
+		Audio.member = {
+				
+				
+			/**
+			 * Returns the current audio mode of Android-Phone.
+			 * Audio mode means that sound, vibrate, silent mode of Android-Phone.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/setAudioMode:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getAudioMode
+			 * 
+			 * @param {function} callback
+			 * 
+			 * @return {G2NMobile.Audio.AudioMode}	
+			 * Returned the {{#crossLink &quot;G2NMobile.Audio.AudioMode/NORMAL:attribute&quot;}}{{/crossLink}}(2)
+			 * when the current audio mode of Android-Phone has sound mode.
+			 * And returned the {{#crossLink &quot;G2NMobile.Audio.AudioMode/VIBRATE:attribute&quot;}}{{/crossLink}}(1) has vibrate mode.
+			 * Also, {{#crossLink &quot;G2NMobile.Audio.AudioMode/SILENT:attribute&quot;}}{{/crossLink}}(0) has silent mode.
+			 * 
+			 * @example
+			 *		function showAudioResult(returnValue) {
+			 *			$(&#x27;#result_mobile_audio&#x27;).text(&#x27;Result: &#x27; + returnValue);
+			 *		}
+			 * 
+			 *		$(&#x27;#btn_mobile_audio_getAudioMode&#x27;).click(function() {
+			 *			G2NMobile.Audio.getAudioMode(showAudioResult);
+		     *		});
+			 */
+			getAudioMode: function getAudioMode(callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is sets the audio mode of Android-Phone. 
+			 * Silent mode will mute the volume and will not vibrate. 
+			 * Vibrate mode will mute the volume and vibrate. 
+			 * Normal mode will be audible and may vibrate according to user settings.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!&lt;br&gt;
+			 * If wrong with the inputed value in first parameter for audioMode, you receive the &#x27;G2NAudioModeException&#x27; message. 
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/getAudioMode:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method setAudioMode
+			 * 
+			 * @param {G2NMobile.Audio.AudioMode} audioMode	
+			 * When you want to change current audio mode of Android-Phone to sound mode, input the
+			 * {{#crossLink &quot;G2NMobile.Audio.AudioMode/NORMAL:attribute&quot;}}{{/crossLink}}(2).
+			 * To vibrate mode input the
+			 * {{#crossLink &quot;G2NMobile.Audio.AudioMode/VIBRATE:attribute&quot;}}{{/crossLink}}(1).
+			 * To silent mode input the
+			 * {{#crossLink &quot;G2NMobile.Audio.AudioMode/SILENT:attribute&quot;}}{{/crossLink}}(0).
+			 * 
+			 * @param {function} callback
+			 * 
+			 * @example
+			 *		G2NMobile.Audio.setAudioMode(G2NMobile.Audio.AudioMode.SILENT);
+			 */
+			setAudioMode: function setAudioMode(audioMode, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method use when detect event about change of audio mode from Android-Phone.
+			 * To detect changed event by audio mode, add the listener.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/removeAudioModeChangedListener:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method addAudioModeChangedListener
+			 * @param {function} listener
+			 * @param {function} callback
+			 * @example
+			 *		var audioModeChangedListenerKey = null;
+			 * 
+			 *		function showAudioResult(returnValue) {
+			 *			$(&#x27;#result_mobile_audio&#x27;).text(&#x27;Result: &#x27; + returnValue[0]);
+			 *		}
+			 * 
+			 *		function addOnAudioModeChangedListenerCallback(key) {
+			 *			audioModeChangedListenerKey = key;
+			 *		}
+			 *
+			 *		function removeAudioModeChangedListenerCallback() {
+			 *			audioModeChangedListenerKey = null;
+			 *		}
+			 * 
+			 *		$(&#x27;#btn_mobile_audio_addAudioModeChangedListener&#x27;).click(function() {
+			 *			G2NMobile.Audio.addAudioModeChangedListener(showAudioResult, addOnAudioModeChangedListenerCallback);
+			 *		});
+			 *
+			 *		$(&#x27;#btn_mobile_audio_removeAudioModeChangedListener&#x27;).click(function() {
+			 *			if ( audioModeChangedListenerKey !== null ) {
+			 *				G2NMobile.Audio.removeAudioModeChangedListener(audioModeChangedListenerKey, removeAudioModeChangedListenerCallback);
+			 *			}
+			 *		});
+			 */
+			addAudioModeChangedListener: function addAudioModeChangedListener(listener, callback) {
+				var msg = G2NMsg.createRegistrationListenerMsg(Audio.objKey, listener, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Remove the event listener about change by audio mode.  
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/addAudioModeChangedListener:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Audio/addAudioModeChangedListener:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method removeAudioModeChangedListener
+			 * @param {String} listenerKey
+			 * @param {function} callback
+			 */
+			removeAudioModeChangedListener: function removeAudioModeChangedListener(listenerKey, callback) {
+				var msg = G2NMsg.createUnregistrationListenerMsg(Audio.objKey, listenerKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},	
+			
+			
+			/**
+			 * Returns the current volume index about the volume type.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt;If wrong with the inputed value in first parameter for volumeType, you receive the &#x27;G2NAudioVolumeTypeException&#x27; message.
+			 * &lt;br&gt;If audio mode isn&#x27;t sound mode, you are unobtainable the volume index. It that you receive the &#x27;G2NAudioModeException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/setVolumeValue:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getVolumeValue
+			 * 
+			 * @param {G2NMobile.Audio.VolumeType} volumeType	
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}(0),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}}(2),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}}(3),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}}(4),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}(5),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}(8)
+			 * 
+			 * @param {function} callback
+			 * @return {Number}
+			 * @example
+			 *		function showAudioResult(returnValue) {
+			 *			$(&#x27;#result_mobile_audio&#x27;).text(&#x27;Result: &#x27; + returnValue[0]);
+			 *		}
+			 *
+			 *		$(&#x27;#btn_mobile_audio_getVolumeValue&#x27;).click(function() {
+			 *			G2NMobile.Audio.getVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, showAudioResult);
+			 *		});
+			 */
+			getVolumeValue: function getVolumeValue(volumeType, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Set the volume index of the volume type.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt;If wrong with the inputed value in first parameter for volumeType, you receive the &#x27;G2NAudioVolumeTypeException&#x27; message.
+			 * &lt;br&gt;If not inputed volume value from 0 to max volume value, you receive the &#x27;G2NAudioVolumeValueException&#x27;. 
+			 * &lt;br&gt;If wrong with the inputed value in third parameter for adjustVolumeOption, you receive the &#x27;G2NAudioAdjustVolumeOptionException&#x27;.
+			 * &lt;br&gt;If audio mode isn&#x27;t sound mode, you are unobtainable the volume index. It that you receive the &#x27;G2NAudioModeException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/getVolumeValue:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method setVolumeValue
+			 * 
+			 * @param {G2NMobile.Audio.VolumeType} volumeType	
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}(0),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}}(2),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}}(3),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}}(4),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}(5),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}(8)
+			 *  
+			 * @param {Number} volumeValue	
+			 * The volume value to set.
+			 * See {{#crossLink &quot;G2NMobile.Audio/getMaxVolumeValue:method&quot;}}{{/crossLink}} for the largest valid value. 
+			 * 
+			 * @param {G2NMobile.Audio.AdjustVolumeOption} adjustVolumeOption	
+			 * The way Android-Phone window display the changed volume value.
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute&quot;}}{{/crossLink}}(4)
+			 * 
+			 * @param {function} callback
+			 * 
+			 * @example
+			 *		G2NMobile.Audio.setVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, 5, G2NMobile.Audio.AdjustVolumeOption.PLAY_SOUND);
+			 */
+			setVolumeValue: function setVolumeValue(volumeType, volumeValue, adjustVolumeOption, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;, &#x27;INT&#x27;, &#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Returns the maximum volume index about the volume type.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt;If wrong with the inputed value in first parameter for volumeType, you receive the &#x27;G2NAudioVolumeTypeException&#x27; message.
+			 * &lt;br&gt;If audio mode isn&#x27;t sound mode, you are unobtainable the volume index. It that you receive the &#x27;G2NAudioModeException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/getVolumeValue:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getMaxVolumeValue
+			 * 
+			 * @param {G2NMobile.Audio.VolumeType} volumeType	
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}(0),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}}(2),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}}(3),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}}(4),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}(5),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}(8)
+			 * 
+			 * @param {function} callback
+			 * @return {Number}
+			 * @example
+			 *		G2NMobile.Audio.getMaxVolumeValue(G2NMobile.Audio.VolumeType.SYSTEM, showAudioResult);
+			 */
+			getMaxVolumeValue: function getMaxVolumeValue(volumeType, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * One step up to adjusts the volume of the volume type.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt;If wrong with the inputed value in first parameter for volumeType, you receive the &#x27;G2NAudioVolumeTypeException&#x27; message.
+			 * &lt;br&gt;If wrong with the inputed value in second parameter for adjustVolumeOption, you receive the &#x27;G2NAudioAdjustVolumeOptionException&#x27;.
+			 * &lt;br&gt;If audio mode isn&#x27;t sound mode, you are unobtainable the volume index. It that you receive the &#x27;G2NAudioModeException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/adjustVolumeDown:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method adjustVolumeUp
+			 * 
+			 * @param {G2NMobile.Audio.VolumeType} volumeType	
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}(0),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}}(2),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}}(3),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}}(4),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}(5),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}(8)
+			 * 
+			 * @param {G2NMobile.Audio.AdjustVolumeOption} adjustVolumeOption	
+			 * The way Android-Phone window display the adjusted volume value.
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute&quot;}}{{/crossLink}}(4)
+			 * 
+			 * @param {function} callback		
+			 * 
+			 * @example
+			 *		G2NMobile.Audio.adjustVolumeUp(G2NMobile.Audio.VolumeType.SYSTEM, G2NMobile.Audio.AdjustVolumeOption.SHOW_UI);
+			 */
+			adjustVolumeUp: function adjustVolumeUp(volumeType, adjustVolumeOption, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;, &#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * One step down to adjusts the volume of the volume type.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt;If wrong with the inputed value in first parameter for volumeType, you receive the &#x27;G2NAudioVolumeTypeException&#x27; message.
+			 * &lt;br&gt;If wrong with the inputed value in second parameter for adjustVolumeOption, you receive the &#x27;G2NAudioAdjustVolumeOptionException&#x27;.
+			 * &lt;br&gt;If audio mode isn&#x27;t sound mode, you are unobtainable the volume index. It that you receive the &#x27;G2NAudioModeException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio/adjustVolumeUp:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method adjustVolumeDown
+			 * 
+			 * @param {G2NMobile.Audio.VolumeType} volumeType	
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}(0),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}}(2),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}}(3),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}}(4),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}(5),
+			 * {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}(8)
+			 * 
+			 * @param {G2NMobile.Audio.AdjustVolumeOption} adjustVolumeOption	
+			 * The way Android-Phone window display the adjusted volume value.
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute&quot;}}{{/crossLink}}(1),
+			 * {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute&quot;}}{{/crossLink}}(4)
+			 *
+			 * @param {function} callback
+			 * 
+			 * @example
+			 *		G2NMobile.Audio.adjustVolumeDown(G2NMobile.Audio.VolumeType.SYSTEM, G2NMobile.Audio.AdjustVolumeOption.SHOW_UI);
+			 */
+			adjustVolumeDown: function adjustVolumeDown(volumeType, adjustVolumeOption, callback) {
+				var msg = G2NMsg.createMethodCallMsg(Audio.objKey, callback, [&#x27;INT&#x27;, &#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			}
+				
+		};
+
+		
+		//============================================================================================================================
+
+		
+		/**
+		 * As AudioMode class is a kind of type, it indicate a value for state of audio mode in Android-Phone.
+		 * It is subordinate to the Audio Class. 
+		 * And used in Audio class of G2NMobile module. 
+		 * 
+		 * @namespace G2NMobile
+		 * @Class Audio.AudioMode
+		 */
+		Audio.member.AudioMode = {
+				
+				
+			/**
+			 * Audio mode that will be silent sound and will not vibrate.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.AudioMode/VIBRATE:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.AudioMode/NORMAL:attribute&quot;}}{{/crossLink}}
+			 * 
+			 * @attribute SILENT
+			 * @type Number
+			 * @default 0
+			 * @static
+			 * @readOnly
+			 */
+			SILENT: 0,
+			
+			
+			/**
+			 * Audio mode that will vibrate and will be silent.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.AudioMode/SILENT:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.AudioMode/NORMAL:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute VIBRATE
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */
+			VIBRATE: 1,
+			
+			
+			/**
+			 * Audio mode that will be audible and will be vibrate. 
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.AudioMode/SILENT:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.AudioMode/VIBRATE:attribute&quot;}}{{/crossLink}}
+			 * 
+			 * @attribute NORMAL
+			 * @type Number
+			 * @default 2
+			 * @static
+			 * @readOnly
+			 */
+			NORMAL: 2			
+		};
+		
+		
+		//============================================================================================================================
+
+		
+		/**
+		 * As VolumeType class is a kind of type, it indicate a value for kind of audio stream in Android-Phone.
+		 * It is subordinate to the Audio Class. 
+		 * And used in Audio class of G2NMobile module. 
+		 * 
+		 * @namespace G2NMobile
+		 * @class Audio.VolumeType 
+		 */
+		Audio.member.VolumeType = {
+			
+				
+			/**
+			 * Audio stream for phone calls.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}
+			 *             
+			 * @attribute VOICE_CALL
+			 * @type Number
+			 * @default 0
+			 * @static
+			 * @readOnly
+			 */
+			VOICE_CALL: 0,
+			
+			
+			/**
+			 * Audio stream for system sounds.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}} 
+			 * 
+			 * @attribute SYSTEM
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */
+			SYSTEM: 1,
+			
+			
+			/**
+			 * Audio stream for the phone ring.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}} 
+			 *             
+			 * @attribute RING
+			 * @type Number
+			 * @default 2
+			 * @static
+			 * @readOnly
+			 */
+			RING: 2,
+			
+			
+			/**
+			 * Audio stream for music playback.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}} 
+			 * 
+			 * @attribute MUSIC
+			 * @type Number
+			 * @default 3
+			 * @static
+			 * @readOnly
+			 */
+			MUSIC: 3,
+			
+			
+			/**
+			 * Audio stream for alarms.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}} 
+			 *             
+			 * @attribute ALARM
+			 * @type Number
+			 * @default 4
+			 * @static
+			 * @readOnly
+			 */
+			ALARM: 4,
+			
+			
+			/**
+			 * Audio stream for notifications.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/DTMF:attribute&quot;}}{{/crossLink}}
+			 *             
+			 * @attribute NOTIFICATION
+			 * @type Number
+			 * @default 5
+			 * @static
+			 * @readOnly
+			 */
+			NOTIFICATION: 5,
+			
+			
+			/**
+			 * Audio stream for DTMF Tones.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.VolumeType/VOICE_CALL:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/SYSTEM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/RING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/MUSIC:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/ALARM:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Audio.VolumeType/NOTIFICATION:attribute&quot;}}{{/crossLink}}
+			 * 
+			 * @attribute DTMF
+			 * @type Number
+			 * @default 8
+			 * @static
+			 * @readOnly
+			 */
+			DTMF: 8
+		};
+		
+		
+		//============================================================================================================================
+
+		
+		/**
+		 * As VolumeType class is a kind of type, to show reacted when you was control volume for many kinds of audio stream in Android-Phone. 
+		 * It is subordinate to the Audio Class. 
+		 * And used in Audio class of G2NMobile module. 
+		 * 
+		 * @namespace G2NMobile
+		 * @class Audio.AdjustVolumeOption 
+		 */
+		Audio.member.AdjustVolumeOption = {
+			
+				
+			/**
+			 * Show a toast volume value that you adjusted current selected audio stream in the Android-Phone window.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/PLAY_SOUND:attribute&quot;}}{{/crossLink}} 
+			 *            
+			 * @attribute SHOW_UI
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */
+			SHOW_UI: 1,
+			
+			
+			/**
+			 * Play sound volume value that you adjusted current selected audio stream in the Android-Phone.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Audio.AdjustVolumeOption/SHOW_UI:attribute&quot;}}{{/crossLink}}
+			 * 
+			 * @attribute PLAY_SOUND
+			 * @type Number
+			 * @default 4
+			 * @static
+			 * @readOnly
+			 */
+			PLAY_SOUND: 4
+		};
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * This Class controls one of Sensors that returned object through the 
+		 * {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+		 * It is supported the sensor to the list of
+		 * {{#crossLink &quot;G2NMobile.Sensor.SensorType&quot;}}{{/crossLink}}.
+		 * &lt;br&gt;&lt;br&gt;
+		 * See Also : {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}},
+		 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute&quot;}}{{/crossLink}},
+		 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/GYROSCOPE:attribute&quot;}}{{/crossLink}},
+		 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/LIGHT:attribute&quot;}}{{/crossLink}} 
+		 * 
+		 * @namespace G2NMobile
+		 * @class Sensor
+		 */
+		Sensor.member = G2NObject.G2NClassDefine({
+			
+			__construct: function(passedObjKey, callback) {
+				G2NSystem.debugLog(&#x27;Sensor __construct called!&#x27;);
+
+				// unregist exist objKey
+				G2NSystem.unregisterObj(this.objKey);
+				
+				// re-registeration objKey from Bridge App Service
+				G2NSystem.registerObjBySelf(passedObjKey, this);
+				this.objKey = passedObjKey;
+			},
+			
+			/**
+			 * To detect changed event by sensor value, add the listener.
+			 * Doing event registration in the beginning.
+			 * After that it add the listener.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also :	{{#crossLink &quot;G2NMobile.Sensor/removeSensorChangedListener:method&quot;}}{{/crossLink}}, 
+			 *				{{#crossLink &quot;G2NMobile.Sensor/startListen:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method addSensorChangedListener
+			 * @param {function} listener
+			 * @param {function} callback
+			 */
+			addSensorChangedListener: function addSensorChangedListener(listener, callback){
+				var msg = G2NMsg.createRegistrationListenerMsg(this.objKey, listener, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Remove the event listener about change by sensor value.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor/addSensorChangedListener:method&quot;}}{{/crossLink}} 
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method removeSensorChangedListener
+			 * @param {String} listenerKey
+			 * @param {function} callback
+			 */
+			removeSensorChangedListener: function removeSensorChangedListener(listenerKey, callback) {
+				var msg = G2NMsg.createUnregistrationListenerMsg(this.objKey, listenerKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is start the listener that detects the sensor value.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt; If you are not call the {{#crossLink &quot;G2NMobile.Sensor/addSensorChangedListener:method&quot;}}{{/crossLink}},
+			 * you will receive the &#x27;G2NSensorAlreadyStartListeningException&#x27; message.
+			 * &lt;br&gt; If there nothing registered the event listener, 
+			 * you will receive the &#x27;G2NSensorEventListenerException&#x27; message.  
+			 * &lt;br&gt; If wrong entered the {{#crossLink &quot;G2NMobile.Sensor.Delay&quot;}}{{/crossLink}},
+			 * you will receive the &#x27;G2NWrongSensorDelayOptionException&#x27; message.   
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also :	{{#crossLink &quot;G2NMobile.Sensor/addSensorChangedListener:method&quot;}}{{/crossLink}}, 
+			 *				{{#crossLink &quot;G2NMobile.Sensor/stopListen:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method startListen
+			 * 
+			 * @param {Number} delayOption   
+			 * {{#crossLink &quot;G2NMobile.Sensor.Delay/FAST:attribute&quot;}}{{/crossLink}} that bring changed sensor value very quickly. 
+			 * {{#crossLink &quot;G2NMobile.Sensor.Delay/NORMAL:attribute&quot;}}{{/crossLink}} that bring changed sensor value on medium speed.
+			 * 
+			 * @param {function} callback
+			 */
+			startListen: function startListen(delayOption, callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback, [&#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is stop the listener that detects the sensor value.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt; If you are not call the {{#crossLink &quot;G2NMobile.Sensor/removeSensorChangedListener:method&quot;}}{{/crossLink}},
+			 * you will receive the &#x27;G2NSensorAlreadyStopListeningException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also :	{{#crossLink &quot;G2NMobile.Sensor/addSensorChangedListener:method&quot;}}{{/crossLink}}, 
+			 *				{{#crossLink &quot;G2NMobile.Sensor/startListen:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method stopListen
+			 * @param {function} callback
+			 */
+			stopListen: function stopListen(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get maximum range of the sensor in the sensor&#x27;s unit.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getMaximumRange
+			 * @param {function} callback
+			 * @return {Number} MaximumRange
+			 */
+			getMaximumRange: function getMaximumRange(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get name string of the sensor.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getName
+			 * @param {function} callback
+			 * @return {String} SensorName
+			 */
+			getName: function getName(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get the power used by this sensor while in use.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getPower
+			 * @param {fuction} callback
+			 * @return {Number} PowerValue
+			 */
+			getPower: function getPower(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get resolution of the sensor in the sensor&#x27;s unit.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getResolution
+			 * @param {function} callback
+			 * @return {Number} Resolution
+			 */
+			getResolution: function getResolution(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get the type of this sensor.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getType
+			 * @param {function} callback
+			 * @return {String} SensorType
+			 */
+			getType: function getType(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get the vendor string of this sensor.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getVender
+			 * @param {function} callback
+			 * @return {String} Vender
+			 */
+			getVendor: function getVendor(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is get a version of the sensor&#x27;s module.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getVersion
+			 * @param {function} callback
+			 * @return {Number} Version
+			 */
+			getVersion: function getVersion(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method returns a string containing a concise, human-readable description of this object. 
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example: {{#crossLink &quot;G2NMobile.Sensor.SensorManager/getSensor:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getDescript
+			 * @param {function} callback
+			 * @return {String} Description
+			 */
+			getDescript: function getDescript(callback) {
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			}
+			
+		});
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * As SensorType class is a kind of type, this class indicate type of loaded sensor within Android-Phone.
+		 * It is subordinate to the Sensor Class. 
+		 * And used in SensorManager class of G2NMobile module. 
+		 * 
+		 * @namespace G2NMobile
+		 * @class Sensor.SensorType 
+		 */
+		Sensor.member.SensorType = {
+				
+				
+			/**
+			 * A constant describing an accelerometer sensor type.
+			 * Acceleration force along the x, y, z axis. 
+			 * Units of measure is &#x27;m/s^2&#x27;.  
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor.SensorType/GYROSCOPE:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/LIGHT:attribute&quot;}}{{/crossLink}} 
+			 *            
+			 * @attribute ACCELEROMETER
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */	
+			ACCELEROMETER: 1,
+						
+			
+			/**
+			 * A constant describing a gyroscope sensor type.
+			 * Rate of rotation around the x, y, z axis.
+			 * Units of measure is &#x27;rad/s&#x27;.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/LIGHT:attribute&quot;}}{{/crossLink}} 
+			 *            
+			 * @attribute GYROSCOPE
+			 * @type Number
+			 * @default 4
+			 * @static
+			 * @readOnly
+			 */	
+			GYROSCOPE: 4,
+			
+			
+			/**
+			 * A constant describing a light sensor type.
+			 * Units of measure is &#x27;lux&#x27;.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Sensor.SensorType/GYROSCOPE:attribute&quot;}}{{/crossLink}} 
+			 *            
+			 * @attribute LIGHT
+			 * @type Number
+			 * @default 5
+			 * @static
+			 * @readOnly
+			 */
+			LIGHT: 5
+			
+		};
+		
+		
+		//============================================================================================================================
+
+		
+		/**
+		 * This class is a kind of Delay type which indicate the changed sensor value.   
+		 * It is subordinate to the Sensor Class. 
+		 * And used in Sensor class of G2NMobile module. 
+		 * 
+		 * @namespace G2NMobile
+		 * @class Sensor.Delay 
+		 */		
+		Sensor.member.Delay = {
+
+				
+			/**
+			 * Bring changed sensor value very quickly.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor.Delay/NORMAL:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute FAST
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */				
+			FAST: 1,
+			
+			
+			/**
+			 * Bring changed sensor value on medium speed.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Sensor.Delay/FAST:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute NORMAL
+			 * @type Number
+			 * @default 3
+			 * @static
+			 * @readOnly
+			 */
+			NORMAL: 3
+			
+		};
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * This Class provides several loaded sensor in Android-Phone.
+		 * For now, it is provides to just the accelerometer, gyroscope, light sensor.
+		 * It is singleton. Whatever you make several object, perceived as one object.
+		 *
+		 * @namespace G2NMobile
+		 * @class Sensor.SensorManager
+		 */
+		Sensor.SensorManager.member = {				
+				
+				
+				/**
+				 * Returns a Sensor class object as inputed the sensor type from first parameter.
+				 * &lt;br&gt;&lt;br&gt;
+				 * Caution!
+				 * &lt;br&gt;If wrong with the inputed value in first parameter for sensor Type, you receive the &#x27;G2NWrongSensorTypeException&#x27; message.
+			     * &lt;br&gt;&lt;br&gt;
+			     * See Also : {{#crossLink &quot;G2NMobile.Sensor&quot;}}{{/crossLink}}
+				 * 
+				 * @method getSensor
+				 * @param {Number} G2NMobile.Sensor.SensorType	
+				 * {{#crossLink &quot;G2NMobile.Sensor.SensorType/ACCELEROMETER:attribute&quot;}}{{/crossLink}}(1),
+				 * {{#crossLink &quot;G2NMobile.Sensor.SensorType/GYROSCOPE:attribute&quot;}}{{/crossLink}}(4),
+				 * {{#crossLink &quot;G2NMobile.Sensor.SensorType/LIGHT:attribute&quot;}}{{/crossLink}}(5)
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @return {G2NMobile.Sensor}
+				 * This Sensor class is defined in receive return value from this method.
+				 * 
+				 * @example
+				 *		var sensor = null;
+				 *		var sensorListenerKey = null;
+				 *		var started = false;
+				 *
+				 *		function showSensorResult(returnValue) {
+				 *			$(&#x27;#result_mobile_sensor&#x27;).html(returnValue);
+				 *		}
+				 *
+				 *		$(&#x27;#btn_mobile_sensor_getSensor&#x27;).click(function() {
+				 *			if ( sensor !== null ) {
+				 *				showSensorResult(&#x27;Sensor is not null&#x27;);
+				 *				return;
+				 *			}
+				 *			sensor = G2NMobile.Sensor.SensorManager.getSensor(G2NMobile.Sensor.SensorType.LIGHT, function(created) {
+				 *				sensor = created;
+				 *				showSensorResult(&#x27;Sensor get: &#x27; + sensor.getObjKey());
+				 *			});
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_addSensorChangedListener&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			if ( sensorListenerKey !== null ) {
+				 *				showSensorResult(&#x27;Already Added&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.addSensorChangedListener(
+				 *				function(returnValue) {
+				 *					var result = &#x27;&#x27;;
+				 *					for ( var i=0 ; i&lt;returnValue.length ; i++ ) {
+				 *						result += returnValue[i];
+				 *						result += &#x27;&lt;br/&gt;&#x27;;
+				 *					}
+				 *					
+				 *					showSensorResult(result);
+				 *				},
+				 *				function(key) {
+				 *					sensorListenerKey = key;
+				 *					showSensorResult(&#x27;Added Listener&#x27;);
+				 *				}
+				 *			);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_startListen&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			if ( sensorListenerKey === null ) {
+				 *				showSensorResult(&#x27;Not added Listener&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			if ( started === true ) {
+				 *				showSensorResult(&#x27;Already Started&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.startListen(G2NMobile.Sensor.Delay.FAST, function() {
+				 *				started = true;
+				 *				showSensorResult(&#x27;Start Listen&#x27;);
+				 *			});
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_stopListen&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			if ( sensorListenerKey === null ) {
+				 *				showSensorResult(&#x27;Not started Listening&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			if ( started === false ) {
+				 *				showSensorResult(&#x27;Already Stoped&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.stopListen(function() {
+				 *				showSensorResult(&#x27;Stop Listen&#x27;);
+				 *				started = false;
+				 *			});
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getMaximumRange&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getMaximumRange(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getName&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getName(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getPower&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getPower(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getResolution&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getResolution(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getType&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getType(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getVendor&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getVendor(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getVersion&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getVersion(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_getDescript&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.getDescript(showSensorResult);
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_removeSensorChangedListener&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}	
+				 *			
+				 *			if ( sensorListenerKey === null ) {
+				 *				showSensorResult(&#x27;Not added Listening&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.removeSensorChangedListener(sensorListenerKey, function() {
+				 *				showSensorResult(&#x27;Removed listener&#x27;);
+				 *				sensorListenerKey = null;
+				 *			});
+				 *		});
+				 *		
+				 *		$(&#x27;#btn_mobile_sensor_destructSensor&#x27;).click(function() {
+				 *			if ( sensor === null ) {
+				 *				showSensorResult(&#x27;Sensor is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			sensor.destruct(function() {
+				 *				sensor = null;
+				 *				showSensorResult(&#x27;Sensor Destructed&#x27;);
+				 *			});
+				 *		});
+				 */
+				getSensor: function getSensor(type, callback){
+					var msg = G2NMsg.createMethodCallMsg(Sensor.SensorManager.objKey, callback, [&#x27;INT&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				}		
+		
+		};
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * This is the &#x27;Vibrate class&#x27; description for the G2NMobile module.
+		 * The Vibrate class controls vibrator on board the Android-Phone. 
+		 * But if vibrator does not exist, it is not work with Gear2.
+		 * Also, Vibrating the Android-Phone doesn&#x27;t change that its audio mode.
+		 * It is singleton. Whatever you make several object, perceived as one object.
+		 *
+		 * @namespace G2NMobile
+		 * @class Vibrate
+		 */
+		Vibrate.member = {
+				
+				
+				/**
+				 * Vibrate constantly for the specified period of millisecond times. 
+				 * After all this time, it will simply stop and not to be repeated.
+				 * &lt;br&gt;&lt;br&gt;
+				 * Caution!
+				 * &lt;br&gt;If You received the &#x27;G2NVibrateTimeException&#x27; message saying that &quot;Currently set time is negative number.&quot;,
+				 * check that &#x27;playTime&#x27; is setting properly with positive number and retry the operation.
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Vibrate/playPatternVibrate:method&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Vibrate/stopVibrate:method&quot;}}{{/crossLink}}
+				 * 
+				 * @method playVibrate
+				 * 
+				 * @param {Number} playTime	
+				 * It is the number of milliseconds to vibrate on. 
+				 * If &#x27;playTime&#x27; number is 0 or negative number, it is disabled.  
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *     $(&#x27;#btn_mobile_vibrate_playVibrate&#x27;).click(function() {
+				 *         G2NMobile.Vibrate.playVibrate(1000);
+				 *     }); 
+				 */
+				playVibrate: function playVibrate(playTime, callback){
+					var msg = G2NMsg.createMethodCallMsg(Vibrate.objKey, callback, [&#x27;LONG&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * You can vibrate with a given pattern and the pattern to repeat. 
+				 * This method is the durations for which to turn on or off the vibrator in milliseconds.
+				 * The first parameter indicates the number of milliseconds to wait before turning the vibrator on.
+				 * And the seconds parameter indicates the number of milliseconds for which to keep the vibrator on before turning it off. 
+				 * Parameters alternate between durations in milliseconds to turn the vibrator off or turn the vibrator on.
+				 * &lt;br&gt;&lt;br&gt;
+				 * Caution!
+				 * &lt;br&gt;If You received the &#x27;G2NVibrateTimeException&#x27; message saying that &quot;Currently set time is negative number.&quot;,
+				 * check that parameters are setting properly with positive number and retry the operation.
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Vibrate/playVibrate:method&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Vibrate/stopVibrate:method&quot;}}{{/crossLink}}
+				 * 
+				 * @method playPatternVibrate
+				 * 
+				 * @param {Number} waitTime	
+				 * It is the number of milliseconds to vibrate off.
+				 * If &#x27;waitTime&#x27; number is 0 or negative number, it is disabled.
+				 *   
+				 * @param {Number} playTime	
+				 * It is the number of milliseconds to vibrate on.
+				 * If &#x27;waitTime&#x27; number is 0 or negative number, it is disabled.
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *     $(&#x27;#btn_mobile_vibrate_playPatternVibrate&#x27;).click(function() {
+				 *         G2NMobile.Vibrate.playPatternVibrate(500, 3000);
+		         *     });
+				 */
+				playPatternVibrate: function playPatternVibrate(waitTime, playTime, callback){
+					var msg = G2NMsg.createMethodCallMsg(Vibrate.objKey, callback, [&#x27;LONG&#x27;, &#x27;LONG&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * This method is turn the vibrator off.
+				 * 
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Vibrate/playPatternVibrate:method&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Vibrate/playVibrate:method&quot;}}{{/crossLink}}
+				 * 
+				 * @method stopVibrate
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *     $(&#x27;#btn_mobile_vibrate_stopVibrate&#x27;).click(function() {
+			     *         G2NMobile.Vibrate.stopVibrate();
+		         *     });
+				 */
+				stopVibrate: function stopVibrate(callback){
+					var msg = G2NMsg.createMethodCallMsg(Vibrate.objKey, callback);
+					G2NConnect.send(JSON.stringify(msg));
+				}
+				
+		};
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * Wifi Class controls Wi-Fi module in Android device.
+		 * This class will detects wireless signal and will makes Wi-Fi list of AP that may be accessed by Wi-Fi.
+		 * Refer to the {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}} class.
+		 * It is singleton. Whatever you make several object, perceived as one object.
+		 * &lt;br&gt;&lt;br&gt;
+		 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}}
+		 * 
+		 * @namespace G2NMobile
+		 * @class Wifi
+		 */
+		Wifi.member = {
+				
+				
+				/**
+				 * This method is add the listener that detects the state of the Wi-Fi.
+				 * To detect changed event of wireless signal for Wi-Fi, add the listener.
+				 * Doing event registration in the beginning.
+				 * After that it add the listener.
+				 * &lt;br&gt;&lt;br&gt;
+				 * Caution!
+				 * &lt;br&gt; If Wi-Fi module state was disable, you will receive the &#x27;G2NWifiDisabledException&#x27; message.
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Wifi/removeWifiStateChangedListener:method&quot;}}{{/crossLink}}
+				 * 
+				 * @method addOnWifiStateChangedListener
+				 * @param {function} listener
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *		var wifiStateListenerKey = null;
+				 *		var wifi_on = false;
+				 * 
+				 *		function showWifiResult(returnValue) {
+				 *			$(&#x27;#result_mobile_wifi&#x27;).html(returnValue);
+				 *		}
+				 *
+				 *		$(&#x27;#btn_mobile_wifi_addWifiStateChangedListener&#x27;).click(function() {
+				 *			
+				 *			if ( wifiStateListenerKey !== null ) {
+				 *				showWifiResult(&#x27;Listener is not null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			G2NMobile.Wifi.addWifiStateChangedListener(function(returnValue) {
+				 *				switch ( returnValue[0] ) {
+				 *					case G2NMobile.Wifi.WifiState.ENABLED:
+				 *						showWifiResult(&#x27;ENABLED&#x27;);
+				 *						break;
+				 *					
+				 *					case G2NMobile.Wifi.WifiState.DISABLED:
+				 *						showWifiResult(&#x27;DISABLED&#x27;);
+				 *						break;
+				 *						
+				 *					case G2NMobile.Wifi.WifiState.CONNECTING:
+				 *						showWifiResult(&#x27;CONNECTING&#x27;);
+				 *						break;
+				 *					
+				 *					case G2NMobile.Wifi.WifiState.CONNECTED:
+				 *						showWifiResult(&#x27;CONNECTED&#x27;);
+				 *						break;
+				 *						
+				 *					case G2NMobile.Wifi.WifiState.DISCONNECTING:
+				 *						showWifiResult(&#x27;DISCONNECTING&#x27;);
+				 *						break;
+				 *						
+				 *					case G2NMobile.Wifi.WifiState.DISCONNECTED:
+				 *						showWifiResult(&#x27;DISCONNECTED&#x27;);
+				 *						break;
+				 *					}
+				 *			}, function(key) {
+				 *				wifiStateListenerKey = key;
+				 *				showWifiResult(&#x27;Added Listener&#x27;);
+				 *			});
+				 *		});
+				 *	
+				 *	
+				 *		$(&#x27;#btn_mobile_wifi_removeWifiStateChangedListener&#x27;).click(function() {
+				 *			if ( wifiStateListenerKey === null ) {
+				 *				showWifiResult(&#x27;Listener is null&#x27;);
+				 *				return;
+				 *			}
+				 *			
+				 *			G2NMobile.Wifi.removeWifiStateChangedListener(wifiStateListenerKey, function() {
+				 *				showWifiResult(&#x27;Removed Listener&#x27;);
+				 *				wifiStateListenerKey = null;
+				 *			});
+				 *		});
+				 */
+				addWifiStateChangedListener: function addWifiStateChangedListener(listener, callback){
+					var msg = G2NMsg.createRegistrationListenerMsg(Wifi.objKey, listener, callback);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * This method is remove the listener that detects the state of the Wi-Fi.
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Wifi/addWifiStateChangedListener:method&quot;}}{{/crossLink}}
+				 * &lt;br&gt;&lt;br&gt;
+				 * Example: {{#crossLink &quot;G2NMobile.Wifi/addWifiStateChangedListener:method&quot;}}{{/crossLink}}
+				 *  
+				 * @method removeWifiStateChangedListener
+				 * @param {String} listenerKey
+				 * @param {function} callback
+				 */
+				removeWifiStateChangedListener: function removeWifiStateChangedListener(listenerKey, callback){
+					var msg = G2NMsg.createUnregistrationListenerMsg(Wifi.objKey, listenerKey, callback);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * This method is checked whether Wi-Fi is enabled or disabled.
+				 * 
+				 * @method getWifiEnabled
+				 * @param {function} callback
+				 * @return {Boolean} flag	True to enable, False to disable.
+				 *  
+				 * @example
+				 *		function showWifiResult(returnValue) {
+				 *			$(&#x27;#result_mobile_wifi&#x27;).html(returnValue);
+				 *		}
+				 *
+				 *		$(&#x27;#btn_mobile_wifi_getWifiEnabled&#x27;).click(function() {
+				 *			G2NMobile.Wifi.getWifiEnabled(function(returnValue) {
+				 *				wifi_on = returnValue;
+				 *				showWifiResult(&#x27;&#x27; + wifi_on);
+				 *			});
+				 *		});
+				 */
+				getWifiEnabled: function getWifiEnabled(callback){
+					var msg = G2NMsg.createMethodCallMsg(Wifi.objKey, callback);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * Set enable or disable Wi-Fi.
+				 * 
+				 * @method setWifiEnabled
+				 * @param {Boolean} flag	True to enable, False to disable.
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *		function showWifiResult(returnValue) {
+				 *			$(&#x27;#result_mobile_wifi&#x27;).html(returnValue);
+				 *		}
+				 *
+				 *		$(&#x27;#btn_mobile_wifi_setWifiEnabled&#x27;).click(function() {
+				 *			if ( wifi_on === true )
+				 *				wifi_on = false;
+				 *			else
+				 *				wifi_on = true;
+				 *			
+				 *			G2NMobile.Wifi.setWifiEnabled(wifi_on, function() {
+				 *				showWifiResult(&#x27;set wifi&#x27;);
+				 *			});
+				 *		});
+				 */
+				setWifiEnabled: function setWifiEnabled(flag, callback){
+					var msg = G2NMsg.createMethodCallMsg(Wifi.objKey, callback, [&#x27;BOOLEAN&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * Makes connectable Wi-Fi list of AP(Access Point), after detect the wireless signal.
+				 * Through this method you creates object of {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}} class.
+				 * &lt;br&gt;&lt;br&gt;
+				 * Caution!
+				 * &lt;br&gt; If state of Wi-Fi module is not enabled, you will receive &#x27;G2NWifiDisabledException&#x27; message. 
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}}
+				 * 
+				 * @method getWifiList
+				 * @param {funciton} callback
+				 * @return {G2NMobile.Wifi.WifiList} Object of WifiList class.
+				 * 
+				 * @example
+				 *		function showWifiResult(returnValue) {
+				 *			$(&#x27;#result_mobile_wifi&#x27;).html(returnValue);
+				 *		}
+				 *
+				 *		$(&#x27;#btn_mobile_wifi_getWifiList&#x27;).click(function() {
+				 *			
+				 *			G2NMobile.Wifi.getWifiList(function(list) {
+				 *				wifiList = list;
+				 *				list.getWifiListSize(function (length) {
+				 *					if ( length &gt; 0 ) {
+				 *						list.getInfo(0, function(info) {
+				 *							info.getSSID(showWifiResult);
+				 *						});
+				 *					}
+				 *				});
+				 *			});
+				 *		});
+				 */
+				getWifiList: function getWifiList(callback){
+					var msg = G2NMsg.createMethodCallMsg(Wifi.objKey, callback);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+					
+				
+				/**
+				 * This method will trying to connect an AP in Wi-Fi list.
+				 * Entering the password does not permit.
+				 * It is allowed to stored the password from Android device already. 
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+				 * 
+				 * @method connectWifi
+				 * @param {G2NMobile.Wifi.WifiList} wifiList
+				 * @param {Number} index 
+				 * It indicate a index of Wi-Fi index, and permit from zero(0) to 
+				 * {{#crossLink &quot;G2NMobile.Wifi.WifiList/getWifiListSize:method&quot;}}{{/crossLink}}.
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *		G2NMobile.Wifi.connectWifi(wifiList, 0);
+				 */
+				connectWifi: function connectWifi(wifiList, index, callback){
+					var msg = G2NMsg.createMethodCallMsg(Wifi.objKey, callback, [&#x27;G2NOBJECT&#x27;,&#x27;INT&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				},
+				
+				
+				/**
+				 * This method will trying to disconnect an AP in Wi-Fi list.
+				 * &lt;br&gt;&lt;br&gt;
+				 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}},
+				 *            {{#crossLink &quot;G2NMobile.Wifi./getWifiList:method&quot;}}{{/crossLink}}
+				 *            
+				 * @method disconnectWifi
+				 * @param {G2NMobile.Wifi.WifiList} wifiList
+				 * @param {Number} index 
+				 * It indicate a index of Wi-Fi index, and permit from zero(0) to 
+				 * {{#crossLink &quot;G2NMobile.Wifi.WifiList/getWifiListSize:method&quot;}}{{/crossLink}}.
+				 * 
+				 * @param {function} callback
+				 * 
+				 * @example
+				 *		G2NMobile.Wifi.disconnectWifi(wifiList, 0);
+				 */
+				disconnectWifi: function disconnectWifi(wifiList, index, callback){
+					var msg = G2NMsg.createMethodCallMsg(Wifi.objKey, callback, [&#x27;G2NOBJECT&#x27;,&#x27;INT&#x27;]);
+					G2NConnect.send(JSON.stringify(msg));
+				}
+				
+		};
+		
+		
+		//============================================================================================================================
+
+		
+		/**
+		 * It indicate a state of Wi-Fi.
+		 * When you register the {{#crossLink &quot;G2NMobile.Wifi/addWifiStateChangedListener:method&quot;}}{{/crossLink}} 
+		 * method of {{#crossLink &quot;G2NMobile.Wifi&quot;}}{{/crossLink}}, you will obtain a state of Wi-Fi. 
+		 * &lt;br&gt;&lt;br&gt;
+		 * See Also : {{#crossLink &quot;G2NMobile.Wifi/addWifiStateChangedListener:method&quot;}}{{/crossLink}},
+		 *            {{#crossLink &quot;G2NMobile.Wifi/removeWifiStateChangedListener:method&quot;}}{{/crossLink}}
+		 * 
+		 * @namespace G2NMobile
+		 * @class Wifi.WifiState
+		 */
+		Wifi.member.WifiState = {
+				
+			/**
+			 * It indicate enabled state of Wi-Fi module in Android device.   
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTED:attribute&quot;}}{{/crossLink}}
+			 *                       
+			 * @attribute ENABLED
+			 * @type Number
+			 * @default 0
+			 * @static
+			 * @readOnly
+			 */	
+			ENABLED: 0,
+			
+			
+			/**
+			 * It indicate disabled state of Wi-Fi module in Android device.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}}, 
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTED:attribute&quot;}}{{/crossLink}}
+			 *            
+			 *            
+			 * @attribute DISABLED
+			 * @type Number
+			 * @default 1
+			 * @static
+			 * @readOnly
+			 */	
+			DISABLED: 1,
+			
+			
+			/**
+			 * It indicate connecting state of one of detected Wi-Fi list.  
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTED:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute CONNECTING
+			 * @type Number
+			 * @default 2
+			 * @static
+			 * @readOnly
+			 */	
+			CONNECTING: 2,
+			
+			
+			/**
+			 * It indicate connected state of one of detected Wi-Fi list.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTED:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute CONNECTED
+			 * @type Number
+			 * @default 3
+			 * @static
+			 * @readOnly
+			 */	
+			CONNECTED: 3,
+			
+			
+			/**
+			 * It indicate disconnecting state of one of detected Wi-Fi list.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTED:attribute&quot;}}{{/crossLink}}
+			 *            
+			 * @attribute DISCONNECTING
+			 * @type Number
+			 * @default 4
+			 * @static
+			 * @readOnly
+			 */	
+			DISCONNECTING: 4,
+			
+			
+			/**
+			 * It indicate disconnected state of one of detected Wi-Fi list.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiState/ENABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISABLED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTING:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/CONNECTED:attribute&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiState/DISCONNECTING:attribute&quot;}}{{/crossLink}}
+			 *  
+			 *            
+			 * @attribute DISCONNECTED
+			 * @type Number
+			 * @default 5
+			 * @static
+			 * @readOnly
+			 */	
+			DISCONNECTED: 5
+		};
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * This class provide a connectable AP of Wi-Fi.
+		 * Through {{#crossLink &quot;G2NMobile.Wifi.WifiList/getInfo:method&quot;}}{{/crossLink}} method {{#crossLink &quot;G2NMobile.Wifi.WifiList&quot;}}{{/crossLink}}
+		 * you will can create received this.
+		 * &lt;br&gt;&lt;br&gt;
+	     * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList/getInfo:method&quot;}}{{/crossLink}}   
+		 * 
+		 * @namespace G2NMobile
+		 * @class Wifi.WifiInfo
+		 */
+		Wifi.WifiInfo.member = G2NObject.G2NClassDefine({
+			
+			
+			__construct: function(passedObjKey, callback) {
+				G2NSystem.debugLog(&#x27;WifiList __construct called!&#x27;);
+
+				// unregist exist objKey
+				G2NSystem.unregisterObj(this.objKey);
+				
+				// re-registeration objKey from Bridge App Service
+				G2NSystem.registerObjBySelf(passedObjKey, this);
+				this.objKey = passedObjKey;
+			},
+			
+			
+			/**
+			 * Return the network name.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getLevel:method&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getBSSID:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getSSID
+			 * @param {function} callback
+			 * @return {String} SSID
+			 */
+			getSSID: function getSSID(callback){
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Return the detected signal level in dBm.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getSSID:method&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getBSSID:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getLevel
+			 * @param {function} callback
+			 * @return {Number} level
+			 */
+			getLevel: function getLevel(callback){
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * Return the address of the AP(access point).
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getSSID:method&quot;}}{{/crossLink}},
+			 *            {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/getLevel:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getBSSID
+			 * @param {function} callback
+			 * @return {String} BSSID
+			 */
+			getBSSID: function getBSSID(callback){
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			}
+			
+		});
+		
+		
+		//============================================================================================================================
+		
+		
+		/**
+		 * WifiList class made of the {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}} method of
+		 * {{#crossLink &quot;G2NMobile.Wifi&quot;}}{{/crossLink}} class.
+		 * It has connectable Wi-Fi list about AP. 
+		 * &lt;br&gt;&lt;br&gt;
+	     * See Also : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+		 * 
+		 * @namespace G2NMobile
+		 * @class Wifi.WifiList
+		 */
+		Wifi.WifiList.member = G2NObject.G2NClassDefine({
+	
+			__construct: function(passedObjKey, callback) {
+				G2NSystem.debugLog(&#x27;WifiList __construct called!&#x27;);
+
+				// unregist exist objKey
+				G2NSystem.unregisterObj(this.objKey);
+				
+				// re-registeration objKey from Bridge App Service
+				G2NSystem.registerObjBySelf(passedObjKey, this);
+				this.objKey = passedObjKey;
+			},
+			
+			/**
+			 * This method is returned size of Wi-Fi list.
+			 * Through this size it has index from zero(0) to return value.
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt; If Wi-Fi list does not exist, you will receive &#x27;G2NWifiListNullException&#x27; message. 
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiList/getInfo:method&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getWifiListSize
+			 * @param {function} callback
+			 * @return {Number} wifiListSize
+			 */
+			getWifiListSize: function getWifiListSize(callback){
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback);
+				G2NConnect.send(JSON.stringify(msg));
+			},
+			
+			
+			/**
+			 * This method is used to create {{#crossLink &quot;G2NMobile.Wifi.WifiInfo&quot;}}{{/crossLink}} object.
+			 * Input the index in first parameter of Wi-Fi list, for index about a AP of Wi-Fi list.
+			 * Just obtain information for AP about{{#crossLink &quot;G2NMobile.Wifi.WifiInfo/SSID:attribute&quot;}}{{/crossLink}},
+			 * {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/level:attribute&quot;}}{{/crossLink}}, 
+			 * {{#crossLink &quot;G2NMobile.Wifi.WifiInfo/BSSID:attribute&quot;}}{{/crossLink}} by this method.   
+			 * &lt;br&gt;&lt;br&gt;
+			 * Caution!
+			 * &lt;br&gt; If Wi-Fi list dose not exist, you will receive &#x27;G2NWifiListNullException&#x27;,
+			 * &lt;br&gt; If range of size of Wi-Fi list were out, you received &#x27;G2NWrongWifiListIndexException&#x27; message.
+			 * &lt;br&gt;&lt;br&gt;
+			 * See Also : {{#crossLink &quot;G2NMobile.Wifi.WifiInfo&quot;}}{{/crossLink}}
+			 * &lt;br&gt;&lt;br&gt;
+			 * Example : {{#crossLink &quot;G2NMobile.Wifi/getWifiList:method&quot;}}{{/crossLink}}
+			 * 
+			 * @method getInfo
+			 * @param {Number} index 
+			 * It indicate the detected Wi-Fi list, it permit from zero(0) to return value of
+			 * {{#crossLink &quot;G2NMobile.Wifi.WifiList/getWIfiLIstSize:method&quot;}}{{/crossLink}}.
+			 *  
+			 * @param {function} callback
+			 * @return {G2NMobile.Wifi.WifiInfo} WifiListInfo
+			 */
+			getInfo: function getInfo(index, callback){
+				var msg = G2NMsg.createMethodCallMsg(this.objKey, callback, [&#x27;INT&#x27;]);
+				G2NConnect.send(JSON.stringify(msg));
+			}
+			
+		});
+		
+		
+		//============================================================================================================================
+
+		
+		publicMember.Audio					= Audio.member;
+		publicMember.Battery				= Battery.member;
+		publicMember.Sensor					= Sensor.member;
+		publicMember.Sensor.SensorManager	= Sensor.SensorManager.member;
+		publicMember.Vibrate				= Vibrate.member;
+		publicMember.Wifi					= Wifi.member;
+		publicMember.Wifi.WifiInfo			= Wifi.WifiInfo.member;
+		publicMember.Wifi.WifiList			= Wifi.WifiList.member;
+		
+		// register getBack classes (getBack classes is that created by Bridge App Service)  
+		G2NSystem.registerClass(Sensor.objKey, Sensor.member);
+		G2NSystem.registerClass(Wifi.WifiInfo.objKey, Wifi.WifiInfo.member);
+		G2NSystem.registerClass(Wifi.WifiList.objKey, Wifi.WifiList.member);
+		
+		isInit = true;		
+	}
+	
+
+	if ( isInit === false ) {
+		initMobile();
+	}
+	
+	return publicMember;	
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

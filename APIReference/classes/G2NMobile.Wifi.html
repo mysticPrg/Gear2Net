@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en" class="yui-overrride">
+<head>
+    <meta charset="utf-8">
+    <title>G2NMobile.Wifi - Gear 2 Net</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1 class="blue-main-title">
+		<a href="../index.html">
+			<img src="../assets/img/logo.png" alt="Gear2Net">
+		</a>
+	    </h1>
+        </div>
+        <div class="yui3-u-1-4 version project-version">
+            API Docs for: 0.1.1
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/G2NMobile.Audio.html">G2NMobile.Audio</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AdjustVolumeOption.html">G2NMobile.Audio.AdjustVolumeOption</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AudioMode.html">G2NMobile.Audio.AudioMode</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.VolumeType.html">G2NMobile.Audio.VolumeType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Battery.html">G2NMobile.Battery</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.html">G2NMobile.Sensor</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.Delay.html">G2NMobile.Sensor.Delay</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorManager.html">G2NMobile.Sensor.SensorManager</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorType.html">G2NMobile.Sensor.SensorType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Vibrate.html">G2NMobile.Vibrate</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.html">G2NMobile.Wifi</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiInfo.html">G2NMobile.Wifi.WifiInfo</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiList.html">G2NMobile.Wifi.WifiList</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiState.html">G2NMobile.Wifi.WifiState</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.html">G2NNetwork.Http</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequest.html">G2NNetwork.Http.HttpRequest</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequestQueue.html">G2NNetwork.Http.HttpRequestQueue</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.RequestMethod.html">G2NNetwork.Http.RequestMethod</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.html">G2NNetwork.Socket</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Address.html">G2NNetwork.Socket.Address</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Protocol.html">G2NNetwork.Socket.Protocol</a></li>
+            
+                <li><a href="../classes/G2NUtil.Keyboard.html">G2NUtil.Keyboard</a></li>
+            
+                <li><a href="../classes/G2NUtil.Log.html">G2NUtil.Log</a></li>
+            
+                <li><a href="../classes/G2NUtil.WebViewer.html">G2NUtil.WebViewer</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/G2NMobile.html">G2NMobile</a></li>
+            
+                <li><a href="../modules/G2NNetwork.html">G2NNetwork</a></li>
+            
+                <li><a href="../modules/G2NUtil.html">G2NUtil</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>G2NMobile.Wifi</h1>
+<div class="meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/api_G2NMobile.js.html#l1377"><code>api\G2NMobile.js:1377</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/G2NMobile.html">G2NMobile</a>
+        
+    
+
+    
+    
+</div>
+
+
+
+<h3>Summary</h3>
+<div class="intro">
+    <p>Wifi Class controls Wi-Fi module in Android device.
+This class will detects wireless signal and will makes Wi-Fi list of AP that may be accessed by Wi-Fi.
+Refer to the <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a> class.
+It is singleton. Whatever you make several object, perceived as one object.
+<br><br>
+See Also : <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a></p>
+
+</div>
+
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_addOnWifiStateChangedListener">addOnWifiStateChangedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_connectWifi">connectWifi</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_disconnectWifi">disconnectWifi</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getWifiEnabled">getWifiEnabled</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getWifiList">getWifiList</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_removeWifiStateChangedListener">removeWifiStateChangedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_setWifiEnabled">setWifiEnabled</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_addOnWifiStateChangedListener" class="method item">
+  <h3 class="blue-method-name">addOnWifiStateChangedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1391"><code>api\G2NMobile.js:1391</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>addOnWifiStateChangedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listener</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>This method is add the listener that detects the state of the Wi-Fi.
+To detect changed event of wireless signal for Wi-Fi, add the listener.
+Doing event registration in the beginning.
+After that it add the listener.
+<br><br>
+Caution!
+<br> If Wi-Fi module state was disable, you will receive the &#39;G2NWifiDisabledException&#39; message.
+<br><br>
+See Also : <a href="../classes/G2NMobile.Wifi.html#method_removeWifiStateChangedListener" class="crosslink">removeWifiStateChangedListener</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listener</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    var wifiStateListenerKey = null;
+    var wifi_on = false;
+
+    function showWifiResult(returnValue) {
+        $(&#39;#result_mobile_wifi&#39;).html(returnValue);
+    }
+
+    $(&#39;#btn_mobile_wifi_addWifiStateChangedListener&#39;).click(function() {
+
+        if ( wifiStateListenerKey !== null ) {
+            showWifiResult(&#39;Listener is not null&#39;);
+            return;
+        }
+
+        G2NMobile.Wifi.addWifiStateChangedListener(function(returnValue) {
+            switch ( returnValue[0] ) {
+                case G2NMobile.Wifi.WifiState.ENABLED:
+                    showWifiResult(&#39;ENABLED&#39;);
+                    break;
+
+                case G2NMobile.Wifi.WifiState.DISABLED:
+                    showWifiResult(&#39;DISABLED&#39;);
+                    break;
+
+                case G2NMobile.Wifi.WifiState.CONNECTING:
+                    showWifiResult(&#39;CONNECTING&#39;);
+                    break;
+
+                case G2NMobile.Wifi.WifiState.CONNECTED:
+                    showWifiResult(&#39;CONNECTED&#39;);
+                    break;
+
+                case G2NMobile.Wifi.WifiState.DISCONNECTING:
+                    showWifiResult(&#39;DISCONNECTING&#39;);
+                    break;
+
+                case G2NMobile.Wifi.WifiState.DISCONNECTED:
+                    showWifiResult(&#39;DISCONNECTED&#39;);
+                    break;
+                }
+        }, function(key) {
+            wifiStateListenerKey = key;
+            showWifiResult(&#39;Added Listener&#39;);
+        });
+    });
+
+
+    $(&#39;#btn_mobile_wifi_removeWifiStateChangedListener&#39;).click(function() {
+        if ( wifiStateListenerKey === null ) {
+            showWifiResult(&#39;Listener is null&#39;);
+            return;
+        }
+
+        G2NMobile.Wifi.removeWifiStateChangedListener(wifiStateListenerKey, function() {
+            showWifiResult(&#39;Removed Listener&#39;);
+            wifiStateListenerKey = null;
+        });
+    });</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_connectWifi" class="method item">
+  <h3 class="blue-method-name">connectWifi</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1582"><code>api\G2NMobile.js:1582</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>connectWifi</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>wifiList</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>index</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>This method will trying to connect an AP in Wi-Fi list.
+Entering the password does not permit.
+It is allowed to stored the password from Android device already. 
+<br><br>
+See Also : <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a>,
+           <a href="../classes/G2NMobile.Wifi.html#method_getWifiList" class="crosslink">getWifiList</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">wifiList</code>
+                        <span class="type"><a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>It indicate a index of Wi-Fi index, and permit from zero(0) to 
+<a href="../classes/G2NMobile.Wifi.WifiList.html#method_getWifiListSize" class="crosslink">getWifiListSize</a>.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    G2NMobile.Wifi.connectWifi(wifiList, 0);</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_disconnectWifi" class="method item">
+  <h3 class="blue-method-name">disconnectWifi</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1607"><code>api\G2NMobile.js:1607</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>disconnectWifi</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>wifiList</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>index</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>This method will trying to disconnect an AP in Wi-Fi list.
+<br><br>
+See Also : <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a>,
+           G2NMobile.Wifi./getWifiList:method</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">wifiList</code>
+                        <span class="type"><a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>It indicate a index of Wi-Fi index, and permit from zero(0) to 
+<a href="../classes/G2NMobile.Wifi.WifiList.html#method_getWifiListSize" class="crosslink">getWifiListSize</a>.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    G2NMobile.Wifi.disconnectWifi(wifiList, 0);</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_getWifiEnabled" class="method item">
+  <h3 class="blue-method-name">getWifiEnabled</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1489"><code>api\G2NMobile.js:1489</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>getWifiEnabled</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>This method is checked whether Wi-Fi is enabled or disabled.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+              
+                <span class="type">Boolean</span>:
+              
+              
+                <div class="blue-return-desc">
+                    <p>flag    True to enable, False to disable.</p>
+
+                </div>
+              
+
+
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    function showWifiResult(returnValue) {
+        $(&#39;#result_mobile_wifi&#39;).html(returnValue);
+    }
+
+    $(&#39;#btn_mobile_wifi_getWifiEnabled&#39;).click(function() {
+        G2NMobile.Wifi.getWifiEnabled(function(returnValue) {
+            wifi_on = returnValue;
+            showWifiResult(&#39;&#39; + wifi_on);
+        });
+    });</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_getWifiList" class="method item">
+  <h3 class="blue-method-name">getWifiList</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1543"><code>api\G2NMobile.js:1543</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>getWifiList</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Makes connectable Wi-Fi list of AP(Access Point), after detect the wireless signal.
+Through this method you creates object of <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a> class.
+<br><br>
+Caution!
+<br> If state of Wi-Fi module is not enabled, you will receive &#39;G2NWifiDisabledException&#39; message. 
+<br><br>
+See Also : <a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a>,
+           <a href="../classes/G2NMobile.Wifi.WifiState.html#attr_ENABLED" class="crosslink">ENABLED</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Funciton</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+              
+                <span class="type"><a href="../classes/G2NMobile.Wifi.WifiList.html" class="crosslink">G2NMobile.Wifi.WifiList</a></span>:
+              
+              
+                <div class="blue-return-desc">
+                    <p>Object of WifiList class.</p>
+
+                </div>
+              
+
+
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    function showWifiResult(returnValue) {
+        $(&#39;#result_mobile_wifi&#39;).html(returnValue);
+    }
+
+    $(&#39;#btn_mobile_wifi_getWifiList&#39;).click(function() {
+
+        G2NMobile.Wifi.getWifiList(function(list) {
+            wifiList = list;
+            list.getWifiListSize(function (length) {
+                if ( length &gt; 0 ) {
+                    list.getInfo(0, function(info) {
+                        info.getSSID(showWifiResult);
+                    });
+                }
+            });
+        });
+    });</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_removeWifiStateChangedListener" class="method item">
+  <h3 class="blue-method-name">removeWifiStateChangedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1472"><code>api\G2NMobile.js:1472</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>removeWifiStateChangedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listenerKey</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>This method is remove the listener that detects the state of the Wi-Fi.
+<br><br>
+See Also : G2NMobile.Wifi/addWifiStateChangedListener:method
+<br><br>
+Example: G2NMobile.Wifi/addWifiStateChangedListener:method</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listenerKey</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_setWifiEnabled" class="method item">
+  <h3 class="blue-method-name">setWifiEnabled</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NMobile.js.html#l1514"><code>api\G2NMobile.js:1514</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>setWifiEnabled</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>flag</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Set enable or disable Wi-Fi.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">flag</code>
+                        <span class="type">Boolean</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>True to enable, False to disable.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    function showWifiResult(returnValue) {
+        $(&#39;#result_mobile_wifi&#39;).html(returnValue);
+    }
+
+    $(&#39;#btn_mobile_wifi_setWifiEnabled&#39;).click(function() {
+        if ( wifi_on === true )
+            wifi_on = false;
+        else
+            wifi_on = true;
+
+        G2NMobile.Wifi.setWifiEnabled(wifi_on, function() {
+            showWifiResult(&#39;set wifi&#39;);
+        });
+    });</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

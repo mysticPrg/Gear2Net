@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en" class="yui-overrride">
+<head>
+    <meta charset="utf-8">
+    <title>G2NNetwork.Socket - Gear 2 Net</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1 class="blue-main-title">
+		<a href="../index.html">
+			<img src="../assets/img/logo.png" alt="Gear2Net">
+		</a>
+	    </h1>
+        </div>
+        <div class="yui3-u-1-4 version project-version">
+            API Docs for: 0.1.1
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/G2NMobile.Audio.html">G2NMobile.Audio</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AdjustVolumeOption.html">G2NMobile.Audio.AdjustVolumeOption</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.AudioMode.html">G2NMobile.Audio.AudioMode</a></li>
+            
+                <li><a href="../classes/G2NMobile.Audio.VolumeType.html">G2NMobile.Audio.VolumeType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Battery.html">G2NMobile.Battery</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.html">G2NMobile.Sensor</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.Delay.html">G2NMobile.Sensor.Delay</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorManager.html">G2NMobile.Sensor.SensorManager</a></li>
+            
+                <li><a href="../classes/G2NMobile.Sensor.SensorType.html">G2NMobile.Sensor.SensorType</a></li>
+            
+                <li><a href="../classes/G2NMobile.Vibrate.html">G2NMobile.Vibrate</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.html">G2NMobile.Wifi</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiInfo.html">G2NMobile.Wifi.WifiInfo</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiList.html">G2NMobile.Wifi.WifiList</a></li>
+            
+                <li><a href="../classes/G2NMobile.Wifi.WifiState.html">G2NMobile.Wifi.WifiState</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.html">G2NNetwork.Http</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequest.html">G2NNetwork.Http.HttpRequest</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.HttpRequestQueue.html">G2NNetwork.Http.HttpRequestQueue</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Http.RequestMethod.html">G2NNetwork.Http.RequestMethod</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.html">G2NNetwork.Socket</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Address.html">G2NNetwork.Socket.Address</a></li>
+            
+                <li><a href="../classes/G2NNetwork.Socket.Protocol.html">G2NNetwork.Socket.Protocol</a></li>
+            
+                <li><a href="../classes/G2NUtil.Keyboard.html">G2NUtil.Keyboard</a></li>
+            
+                <li><a href="../classes/G2NUtil.Log.html">G2NUtil.Log</a></li>
+            
+                <li><a href="../classes/G2NUtil.WebViewer.html">G2NUtil.WebViewer</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/G2NMobile.html">G2NMobile</a></li>
+            
+                <li><a href="../modules/G2NNetwork.html">G2NNetwork</a></li>
+            
+                <li><a href="../modules/G2NUtil.html">G2NUtil</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>G2NNetwork.Socket</h1>
+<div class="meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/api_G2NNetwork.js.html#l347"><code>api\G2NNetwork.js:347</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/G2NNetwork.html">G2NNetwork</a>
+        
+    
+
+    
+    
+</div>
+
+
+
+<h3>Summary</h3>
+<div class="intro">
+    <p>This class indicates socket communication.
+It support to TCP and UDP protocol, refer to <a href="../classes/G2NNetwork.Socket.Protocol.html" class="crosslink">G2NNetwork.Socket.Protocol</a>.
+because we don&#39;t know when response message about the socket connection and closer will come, 
+these must register event listener.<br><br><br>
+See Also : <a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a>,
+           <a href="../classes/G2NNetwork.Socket.Protocol.html" class="crosslink">G2NNetwork.Socket.Protocol</a></p>
+
+</div>
+
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_addConnectedListener">addConnectedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_addDisconnectedListener">addDisconnectedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_addReceiveMessageListener">addReceiveMessageListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_close">close</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getAddress">getAddress</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_openAndListen">openAndListen</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_removeConnectedListener">removeConnectedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_removeDisconnectedListener">removeDisconnectedListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_removeReceiveMessageListener">removeReceiveMessageListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_sendMessage">sendMessage</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_Socket">Socket</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_addConnectedListener" class="method item">
+  <h3 class="blue-method-name">addConnectedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l761"><code>api\G2NNetwork.js:761</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>addConnectedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listener</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To detect event whether open the socket, add the listener.
+Doing event registration in the beginning.
+After that it add the listener.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_openAndListen" class="crosslink">openAndListen</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeConnectedListener" class="crosslink">removeConnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listener</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_addDisconnectedListener" class="method item">
+  <h3 class="blue-method-name">addDisconnectedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l798"><code>api\G2NNetwork.js:798</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>addDisconnectedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listener</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To detect event whether close the socket, add the listener.
+Doing event registration in the beginning.
+After that it add the listener.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_close" class="crosslink">close</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeDisconnectedListener" class="crosslink">removeDisconnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listener</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_addReceiveMessageListener" class="method item">
+  <h3 class="blue-method-name">addReceiveMessageListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l725"><code>api\G2NNetwork.js:725</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>addReceiveMessageListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listener</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To detect event about receive message from external server, register the listener. 
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_sendMessage" class="crosslink">sendMessage</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeReceiveMessageListener" class="crosslink">removeReceiveMessageListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listener</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_close" class="method item">
+  <h3 class="blue-method-name">close</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l836"><code>api\G2NNetwork.js:836</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>close</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Close the connected socket.
+This method is start the listener that detects whether normally closed the socket.
+You can add listener by <a href="../classes/G2NNetwork.Socket.html#method_addDisconnectedListener" class="crosslink">addDisconnectedListener</a>.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_openAndListen" class="crosslink">openAndListen</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_addDisconnectedListener" class="crosslink">addDisconnectedListener</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeDisconnectedListener" class="crosslink">removeDisconnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_getAddress" class="method item">
+  <h3 class="blue-method-name">getAddress</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l687"><code>api\G2NNetwork.js:687</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>getAddress</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>IP address and Port number of host connected socket return by object of <a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a> class.
+<br><br>
+See Also : <a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+              
+                <span class="type"><a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a></span>:
+              
+              
+                <div class="blue-return-desc">
+                    <p>address</p>
+
+                </div>
+              
+
+
+            </div>
+        </div>
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_openAndListen" class="method item">
+  <h3 class="blue-method-name">openAndListen</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l663"><code>api\G2NNetwork.js:663</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>openAndListen</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Open a socket.
+This method is start the listener that detects whether normally open the socket.
+You can add listener by <a href="../classes/G2NNetwork.Socket.html#method_addConnectedListener" class="crosslink">addConnectedListener</a>.
+<br><br>
+Caution!
+<br> When entered IP address was wrong, you will receive &#39;UnknownHostException&#39; message.
+<br> And if occur the problem of I/O, you will receive &#39;IOException&#39; message.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_close" class="crosslink">close</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_addConnectedListener" class="crosslink">addConnectedListener</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeConnectedListener" class="crosslink">removeConnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_removeConnectedListener" class="method item">
+  <h3 class="blue-method-name">removeConnectedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l781"><code>api\G2NNetwork.js:781</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>removeConnectedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listenerKey</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To stop detect event whether open the socket, remove the listener.
+<br><br>
+See Also : <a href="../classes/G2NNetwork.Socket.html#method_openAndListen" class="crosslink">openAndListen</a>,
+           <a href="../classes/G2NNetwork.Socket.html#method_addConnectedListener" class="crosslink">addConnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listenerKey</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_removeDisconnectedListener" class="method item">
+  <h3 class="blue-method-name">removeDisconnectedListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l818"><code>api\G2NNetwork.js:818</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>removeDisconnectedListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listenerKey</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To stop detect event whether close the socket, remove the listener.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_close" class="crosslink">close</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_addDisconnectedListener" class="crosslink">addDisconnectedListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listenerKey</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_removeReceiveMessageListener" class="method item">
+  <h3 class="blue-method-name">removeReceiveMessageListener</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l743"><code>api\G2NNetwork.js:743</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>removeReceiveMessageListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>listenerKey</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>To stop detect event about receive message from external server, unregister the listener. 
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_sendMessage" class="crosslink">sendMessage</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_addReceiveMessageListener" class="crosslink">addReceiveMessageListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">listenerKey</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_sendMessage" class="method item">
+  <h3 class="blue-method-name">sendMessage</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l704"><code>api\G2NNetwork.js:704</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>sendMessage</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>message</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Send the message to host through IP address and Port number from connected socket. 
+<br><br>
+Caution!
+<br> If occur the problem of I/O, you will receive &#39;IOException&#39; message.
+<br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.html#method_addReceiveMessageListener" class="crosslink">addReceiveMessageListener</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_removeReceiveMessageListener" class="crosslink">removeReceiveMessageListener</a>
+<br><br>
+Example : <a href="../classes/G2NNetwork.Socket.html#method_Socket" class="crosslink">Socket</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">message</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+
+    
+
+</div>
+
+                
+                    <div id="method_Socket" class="method item">
+  <h3 class="blue-method-name">Socket</h3>
+
+  <div class="meta method-meta">
+    
+      
+        
+      <p>
+        
+          Defined in
+        
+      
+    
+    
+      <a href="../files/api_G2NNetwork.js.html#l362"><code>api\G2NNetwork.js:362</code></a>
+    
+  </p>
+
+
+    
+
+    
+  </div>
+
+  <h3>Syntax</h3>
+  <div class="blue-method-syntax">
+  <h3 class="name"><code>Socket</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>address</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>protocol</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+    <div class="description">
+      <h3>Summary</h3>
+        <p>Description
+It is constructor.
+After select using protocol, you will create object of Socket class.
+It is not open a socket. 
+Opening the socket refer to <a href="../classes/G2NNetwork.Socket.html#method_openAndListen" class="crosslink">openAndListen</a> method.<br><br><br>
+See Also :    <a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a>,
+                <a href="../classes/G2NNetwork.Socket.html#method_openAndListen" class="crosslink">openAndListen</a>,
+                <a href="../classes/G2NNetwork.Socket.Protocol.html#attr_TCP" class="crosslink">TCP</a>,
+                <a href="../classes/G2NNetwork.Socket.Protocol.html#attr_UDP" class="crosslink">UDP</a></p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">address</code>
+                        <span class="type"><a href="../classes/G2NNetwork.Socket.Address.html" class="crosslink">G2NNetwork.Socket.Address</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">protocol</code>
+                        <span class="type"><a href="../classes/G2NNetwork.Socket.Protocol.html" class="crosslink">G2NNetwork.Socket.Protocol</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>    function showSocketResult(returnValue) {
+        $(&#39;#result_network_socket&#39;).text(String(returnValue));
+    }
+
+    var address = null;
+    var socket_ip = &#39;210.118.74.165&#39;;
+    var socket_port = 33333;
+
+    $(&#39;#btn_to_network_socket_create_address&#39;).click(function() {
+        if ( address !== null ) {
+            showSocketResult(&#39;address is not null&#39;);
+            return;
+        }
+
+        address = new G2NNetwork.Socket.Address(socket_ip, socket_port, function() {
+            showSocketResult(&#39;Address Created!&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_getPort&#39;).click(function() {
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        address.getPort(showSocketResult);
+    });
+
+    $(&#39;#btn_to_network_socket_setPort&#39;).click(function() {
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        address.setPort(33336, function() {
+            showSocketResult(&#39;port changed!&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_getIP&#39;).click(function() {
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        address.getIP(showSocketResult);
+    });
+
+    $(&#39;#btn_to_network_socket_setIP&#39;).click(function() {
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        address.setIP(&#39;210.118.74.166&#39;, function() {
+            showSocketResult(&#39;ip changed!&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_delete_address&#39;).click(function() {
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        address.destruct(function() {
+            showSocketResult(&#39;Address Deleted!&#39;);
+            address = null;
+        });
+    });
+
+    var socket = null;
+    var receiveListenerKey = null;
+    var connectedListenerKey = null;
+    var disconnectedListenerKey = null;
+    var listen = false;
+
+    $(&#39;#btn_to_network_socket_create_socket&#39;).click(function() {
+        if ( socket !== null ) {
+            showSocketResult(&#39;socket is not null&#39;);
+            return;
+        }
+
+        if ( address === null ) {
+            showSocketResult(&#39;address is null&#39;);
+            return;
+        }
+
+        socket = new G2NNetwork.Socket(address, G2NNetwork.Socket.Protocol.TCP, function() {
+            showSocketResult(&#39;Socket Created!&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_addReceiveMessageListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( receiveListenerKey !== null ) {
+            showSocketResult(&#39;already added&#39;);
+            return;
+        }
+
+        socket.addReceiveMessageListener(showSocketResult, function(key) {
+            showSocketResult(&#39;added receive listener&#39;);
+            receiveListenerKey = key;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_addConnectedListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( connectedListenerKey !== null ) {
+            showSocketResult(&#39;already added&#39;);
+            return;
+        }
+
+        socket.addConnectedListener(showSocketResult, function(key) {
+            showSocketResult(&#39;added connected listener&#39;);
+            connectedListenerKey = key;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_addDisconnectedListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( disconnectedListenerKey !== null ) {
+            showSocketResult(&#39;already added&#39;);
+            return;
+        }
+
+        socket.addDisconnectedListener(function() {
+            listen = false;
+
+            showSocketResult(&#39;Disconnected&#39;);
+        }, function(key) {
+            showSocketResult(&#39;added disconnected listener&#39;);
+            disconnectedListenerKey = key;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_openAndListen&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( receiveListenerKey === null ) {
+            showSocketResult(&#39;receive listener is not added&#39;);
+            return;
+        }
+
+        if ( connectedListenerKey === null ) {
+            showSocketResult(&#39;connected listener is not added&#39;);
+            return;
+        }
+
+        if ( disconnectedListenerKey === null ) {
+            showSocketResult(&#39;disconnected listener is not added&#39;);
+            return;
+        }
+
+        if ( listen === true ) {
+            showSocketResult(&#39;already listening&#39;);
+            return;
+        }
+
+        socket.openAndListen(function() {
+            listen = true;
+            showSocketResult(&#39;socket is listenning...&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_send&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        socket.sendMessage(&#39;Hello G2N!&#39;, function() {
+            showSocketResult(&#39;Send Success!&#39;);
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_close&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( listen === false) {
+            showSocketResult(&#39;socket is not open&#39;);
+            return;
+        }
+
+        socket.close(function() {
+            showSocketResult(&#39;Close Success!&#39;);
+            listen = false;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_removeReceiveMessageListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( receiveListenerKey === null ) {
+            showSocketResult(&#39;not added receive listener&#39;);
+            return;
+        }
+
+        socket.removeReceiveMessageListener(receiveListenerKey, function() {
+            showSocketResult(&#39;removed receive listener&#39;);
+            receiveListenerKey = null;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_removeConnectedListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( connectedListenerKey === null ) {
+            showSocketResult(&#39;not added connected listener&#39;);
+            return;
+        }
+
+        socket.removeConnectedListener(connectedListenerKey, function() {
+            showSocketResult(&#39;removed connected listener&#39;);
+            connectedListenerKey = null;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_removeDisconnectedListener&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( disconnectedListenerKey === null ) {
+            showSocketResult(&#39;not added disconencted listener&#39;);
+            return;
+        }
+
+        socket.removeDisconnectedListener(disconnectedListenerKey, function() {
+            showSocketResult(&#39;removed disconencted listener&#39;);
+            disconnectedListenerKey = null;
+        });
+    });
+
+    $(&#39;#btn_to_network_socket_delete_socket&#39;).click(function() {
+        if ( socket === null ) {
+            showSocketResult(&#39;socket is null&#39;);
+            return;
+        }
+
+        if ( listen === true ) {
+            showSocketResult(&#39;socket is listenning...&#39;);
+            return;
+        }
+
+        socket.destruct(function() {
+            showSocketResult(&#39;Deleted socket&#39;);
+            socket = null;
+        });
+    });</code></pre>
+
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
